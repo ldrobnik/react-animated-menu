@@ -16,9 +16,9 @@ function Home() {
         setWindowWidth(window.innerWidth);
     };
 
-    // A function updating the menu visibility
-    const handleMenuVisibility = (bool) => {
-      setMenuVisible(bool);
+    // A function showing the menu
+    const showMenu = () => {
+        setMenuVisible(true);
     };
 
     // Add an event listener to monitor the screen width and remove the listener when the component unmounts
@@ -33,10 +33,15 @@ function Home() {
     // A constant specifying whether the app is displayed on a mobile device
     const isMobile = windowWidth <= 500;
 
-    // A constant specifying which menu (for mobile or desktop) should be displayed
-    const menu = isMobile ? <MobileMenu /> : <DesktopMenu />;
+    // A constant specifying whether and which menu (mobile or desktop) should be displayed
+    const menu = menuVisible ? (isMobile ? <MobileMenu/> : <DesktopMenu/>) : null;
 
-    return menu;
+    return (
+        <React.Fragment>
+            <button onClick={showMenu}>Menu</button>
+            {menu}
+        </React.Fragment>
+    );
 
 }
 

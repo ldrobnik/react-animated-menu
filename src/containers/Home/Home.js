@@ -1,5 +1,8 @@
 import React, {useState, useEffect} from 'react';
 
+import MobileMenu from '../../components/Menus/MobileMenu/MobileMenu';
+import DesktopMenu from '../../components/Menus/DesktopMenu/DesktopMenu';
+
 function Home() {
 
     // A state variable specifying the current window width
@@ -23,7 +26,7 @@ function Home() {
     const isMobile = windowWidth <= 500;
 
     // A constant specifying which menu (for mobile or desktop) should be displayed
-    const menu = isMobile ? <div>Mobile</div> : <div>Desktop</div>;
+    const menu = isMobile ? <MobileMenu /> : <DesktopMenu />;
 
     return menu;
 

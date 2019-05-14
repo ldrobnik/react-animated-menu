@@ -8,9 +8,17 @@ function Home() {
     // A state variable specifying the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    //A function updating the window width
+    // A state variable specifying whether the menu is visible
+    const [menuVisible, setMenuVisible] = useState(false);
+
+    // A function updating the window width
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth);
+    };
+
+    // A function updating the menu visibility
+    const handleMenuVisibility = (bool) => {
+      setMenuVisible(bool);
     };
 
     // Add an event listener to monitor the screen width and remove the listener when the component unmounts

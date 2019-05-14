@@ -1,8 +1,11 @@
 import React from 'react';
 
 function DesktopMenu(props) {
-    return(
-      <div>Mobile Menu</div>
+    return (
+        <React.Fragment>
+            <div>Mobile Menu</div>
+            <button onClick={props.hideMenu}>Close</button>
+        </React.Fragment>
     );
 }
 

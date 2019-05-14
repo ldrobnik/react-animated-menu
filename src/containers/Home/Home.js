@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import MobileMenu from '../../components/Menus/MobileMenu/MobileMenu';
 import DesktopMenu from '../../components/Menus/DesktopMenu/DesktopMenu';
 
-function Home() {
+function Home(props) {
 
     // A state variable specifying the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,6 +21,11 @@ function Home() {
         setMenuVisible(true);
     };
 
+    // A function hiding the menu
+    const hideMenu = () => {
+        setMenuVisible(false);
+    };
+
     // Add an event listener to monitor the screen width and remove the listener when the component unmounts
     useEffect(() => {
         window.addEventListener('resize', handleWindowSizeChange);
@@ -34,7 +39,7 @@ function Home() {
     const isMobile = windowWidth <= 500;
 
     // A constant specifying whether and which menu (mobile or desktop) should be displayed
-    const menu = menuVisible ? (isMobile ? <MobileMenu/> : <DesktopMenu/>) : null;
+    const menu = menuVisible ? (isMobile ? <MobileMenu hideMenu={hideMenu}/> : <DesktopMenu hideMenu={hideMenu}/>) : null;
 
     return (
         <React.Fragment>

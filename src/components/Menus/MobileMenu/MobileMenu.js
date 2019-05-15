@@ -16,6 +16,12 @@ import {
 /* STYLES */
 const LinkContainer = styled.p`
   margin: 0.5em;
+  border-top: solid 1px #F8B6B8;
+  padding: 8px 2px 2px 2px;
+  
+  :first-of-type {
+  border-top: none;
+  }
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`
@@ -27,7 +33,7 @@ const MenuLink = styled(Link)`
   text-decoration: none;
 `;
 
-/* Array containing menu data
+/* Array containing menu data:
 *   name - name to be displayed
 *   route - route activated by clicking
 *   icon - name of fontawesome icon
@@ -88,7 +94,7 @@ function DesktopMenu(props) {
     return (
         <React.Fragment>
             <div>Mobile Menu</div>
-            {menuLinks.map(link => (
+            {menuLinks.map((link) => (
                 <LinkContainer
                     key={link.name}
                     onClick={props.hideMenu}

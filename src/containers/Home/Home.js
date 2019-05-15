@@ -34,22 +34,33 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Wrapper = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100vh;
     width: 100vw;
+    position: relative;
 `;
 
 const MenuButton = styled.button`
-    font-size: 1em;
-    padding: 0.25em 1em;
-    border-radius: 2px;
+    
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    
     background-color: #EE5F63;
     color: #FFF;
+    
+    padding: 0.25em 1em;
+    width: 6em;
+    height: 3em;
+    position: absolute;
+    top: calc(50% - 3em);
+    left: calc(50% - 3em);
+    
+    border-radius: 3px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 4px;
     border-color: white;
+    
+    cursor: pointer;
     
     :hover {
         background-color: #F8B6B8;

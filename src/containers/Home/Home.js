@@ -113,9 +113,7 @@ function Home() {
                         }}>
                             {menu}
                         </div>
-
                     )}
-
                 </CSSTransition>
             </Wrapper>
         </React.Fragment>

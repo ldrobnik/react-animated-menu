@@ -92,6 +92,11 @@ function Home() {
         setWindowWidth(window.innerWidth);
     };
 
+    // Changes number format to add comma as thousands separator
+    const formatNumber = num => {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+    };
+
     // Add an event listener to monitor the screen width and remove the listener when the component unmounts
     useEffect(() => {
         window.addEventListener('resize', handleWindowSizeChange);
@@ -104,9 +109,29 @@ function Home() {
     // A constant specifying whether the app is displayed on a mobile device
     const isMobile = windowWidth <= 500;
 
+    // Example user data
+    const userData = {
+        firstName: 'Dominik',
+        surname: 'Biel',
+        balance:  1500.00,
+        image: 'avatar'
+    };
     // A constant specifying whether and which menu (mobile or desktop) should be displayed
-    const menu = isMobile ? <MobileMenu hideMenu={() => setShowMenu(false)}/> :
-        <DesktopMenu hideMenu={() => setShowMenu(false)}/>;
+    const menu = isMobile ?
+        <MobileMenu
+            hideMenu={() => setShowMenu(false)}
+            firstName={userData.firstName}
+            surname={userData.surname}
+            balance={formatNumber(userData.balance)}
+            image={userData.image}
+        /> :
+        <DesktopMenu
+            hideMenu={() => setShowMenu(false)}
+            firstName={userData.firstName}
+            surname={userData.surname}
+            balance={formatNumber(userData.balance)}
+            image={userData.image}
+        />;
 
     return (
         <React.Fragment>

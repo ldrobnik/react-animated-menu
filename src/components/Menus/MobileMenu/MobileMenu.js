@@ -67,7 +67,13 @@ function DesktopMenu(props) {
     return (
         <React.Fragment>
             <div>Mobile Menu</div>
-            <FontAwesomeIcon icon={menuLinks[0].icon} transform={{rotate: menuLinks[0].rotation}}/>
+            {menuLinks.map( link => (
+             <p
+                 key={link.name}
+             >
+                 <FontAwesomeIcon icon={link.icon} transform={{rotate: link.rotation}}/>&nbsp;{link.name}
+             </p>
+            ))}
             <button onClick={props.hideMenu}>Close</button>
         </React.Fragment>
     );

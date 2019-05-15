@@ -1,28 +1,46 @@
 import React, {useState, useEffect} from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import MobileMenu from '../../components/Menus/MobileMenu/MobileMenu';
 import DesktopMenu from '../../components/Menus/DesktopMenu/DesktopMenu';
 
+// React-transition-group-related code
+
+// Transition duration
+const duration = 300;
+
+// Default style
+const defaultStyle = {
+    transition: `opacity ${duration}ms ease-in-out`,
+    opacity: 0
+};
+
+// Definition of behaviour
+const transitionStyles = {
+    entering: {opacity: 1},
+    entered: {opacity: 1},
+    exiting: {opacity: 0},
+    exited: {opacity: 0}
+};
+
 function Home(props) {
 
-    // A state variable specifying the current window width
+    // Specifies the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    // A state variable specifying whether the menu is visible
+    // Specifies whether the menu is visible
     const [menuVisible, setMenuVisible] = useState(false);
 
-    // A function updating the window width
+    // Specifies menu transition
+    const [showMenu, setShowMenu] = useState(false);
+
+    // Updates the window width
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth);
     };
 
-    // A function showing the menu
-    const showMenu = () => {
-        setMenuVisible(true);
-    };
-
-    // A function hiding the menu
-    const hideMenu = () => {
+    // Hides the menu
+    const handleMenuHiding = () => {
         setMenuVisible(false);
     };
 
@@ -39,12 +57,25 @@ function Home(props) {
     const isMobile = windowWidth <= 500;
 
     // A constant specifying whether and which menu (mobile or desktop) should be displayed
-    const menu = menuVisible ? (isMobile ? <MobileMenu hideMenu={hideMenu}/> : <DesktopMenu hideMenu={hideMenu}/>) : null;
+    const menu = menuVisible ? (isMobile ? <MobileMenu hideMenu={handleMenuHiding}/> : <DesktopMenu hideMenu={handleMenuHiding}/>) : null;
 
     return (
         <React.Fragment>
-            <button onClick={showMenu}>Menu</button>
-            {menu}
+            <button onClick={() => setShowMenu(true)}>Menu</button>
+            <CSSTransition
+                in={showMenu}
+                timeout={duration}>
+                {state => (
+                    <div style={{
+                        ...defaultStyle,
+                        ...transitionStyles[state]
+                    }}>
+                        {menu}
+                    </div>
+
+                )}
+
+            </CSSTransition>
         </React.Fragment>
     );
 

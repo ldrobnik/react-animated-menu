@@ -13,7 +13,12 @@ import {
     faInfoCircle
 } from '@fortawesome/free-solid-svg-icons';
 
+/* STYLES */
 
+const MenuLink = styled(Link)`
+  color: white;
+  text-decoration: none;
+`;
 
 /* Array containing menu data
 *   name - name to be displayed
@@ -81,9 +86,9 @@ function DesktopMenu(props) {
                     key={link.name}
                     onClick={props.hideMenu}
                 >
-                    <Link to={link.route}>
+                    <MenuLink to={link.route}>
                         <FontAwesomeIcon icon={link.icon} transform={{rotate: link.rotation}}/>&nbsp;{link.name}
-                    </Link>
+                    </MenuLink>
                 </p>
             ))}
             <button onClick={props.hideMenu}>Close</button>

@@ -75,6 +75,7 @@ function DesktopMenu(props) {
             {menuLinks.map( link => (
              <p
                  key={link.name}
+                 onClick={props.hideMenu}
              >
                  <FontAwesomeIcon icon={link.icon} transform={{rotate: link.rotation}}/>&nbsp;{link.name}
              </p>

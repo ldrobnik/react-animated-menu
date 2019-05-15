@@ -14,6 +14,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 /* STYLES */
+const LinkContainer = styled.p`
+  margin: 0.5em;
+`;
+
+const MenuIcon = styled(FontAwesomeIcon)`
+  margin-right: 0.5em;
+`;
 
 const MenuLink = styled(Link)`
   color: white;
@@ -82,14 +89,15 @@ function DesktopMenu(props) {
         <React.Fragment>
             <div>Mobile Menu</div>
             {menuLinks.map(link => (
-                <p
+                <LinkContainer
                     key={link.name}
                     onClick={props.hideMenu}
                 >
                     <MenuLink to={link.route}>
-                        <FontAwesomeIcon icon={link.icon} transform={{rotate: link.rotation}}/>&nbsp;{link.name}
+                            <MenuIcon icon={link.icon} transform={{rotate: link.rotation}}/>
+                        {link.name}
                     </MenuLink>
-                </p>
+                </LinkContainer>
             ))}
             <button onClick={props.hideMenu}>Close</button>
         </React.Fragment>

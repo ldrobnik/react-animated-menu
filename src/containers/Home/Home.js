@@ -28,20 +28,12 @@ function Home(props) {
     // Specifies the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    // Specifies whether the menu is visible
-    const [menuVisible, setMenuVisible] = useState(false);
-
     // Specifies menu transition
     const [showMenu, setShowMenu] = useState(false);
 
     // Updates the window width
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth);
-    };
-
-    // Hides the menu
-    const handleMenuHiding = () => {
-        setMenuVisible(false);
     };
 
     // Add an event listener to monitor the screen width and remove the listener when the component unmounts
@@ -57,7 +49,7 @@ function Home(props) {
     const isMobile = windowWidth <= 500;
 
     // A constant specifying whether and which menu (mobile or desktop) should be displayed
-    const menu = menuVisible ? (isMobile ? <MobileMenu hideMenu={handleMenuHiding}/> : <DesktopMenu hideMenu={handleMenuHiding}/>) : null;
+    const menu = isMobile ? <MobileMenu hideMenu={() => setShowMenu(false)}/> : <DesktopMenu hideMenu={() => setShowMenu(false)}/>;
 
     return (
         <React.Fragment>
@@ -70,7 +62,7 @@ function Home(props) {
                         ...defaultStyle,
                         ...transitionStyles[state]
                     }}>
-                        {menu}
+                        <div>{menu}</div>
                     </div>
 
                 )}

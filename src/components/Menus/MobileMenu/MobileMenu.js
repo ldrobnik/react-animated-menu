@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import styled from 'styled-components';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
     faUserCircle,
@@ -10,6 +12,8 @@ import {
     faQuestionCircle,
     faInfoCircle
 } from '@fortawesome/free-solid-svg-icons';
+
+
 
 /* Array containing menu data
 *   name - name to be displayed
@@ -72,13 +76,15 @@ function DesktopMenu(props) {
     return (
         <React.Fragment>
             <div>Mobile Menu</div>
-            {menuLinks.map( link => (
-             <p
-                 key={link.name}
-                 onClick={props.hideMenu}
-             >
-                 <FontAwesomeIcon icon={link.icon} transform={{rotate: link.rotation}}/>&nbsp;{link.name}
-             </p>
+            {menuLinks.map(link => (
+                <p
+                    key={link.name}
+                    onClick={props.hideMenu}
+                >
+                    <Link to={link.route}>
+                        <FontAwesomeIcon icon={link.icon} transform={{rotate: link.rotation}}/>&nbsp;{link.name}
+                    </Link>
+                </p>
             ))}
             <button onClick={props.hideMenu}>Close</button>
         </React.Fragment>

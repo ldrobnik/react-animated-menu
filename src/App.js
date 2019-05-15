@@ -1,9 +1,10 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 import Home from './containers/Home/Home';
 
 function App() {
   return (
-    <Home />
+    <Route path='/' component={Home}/>
   );
 }
 

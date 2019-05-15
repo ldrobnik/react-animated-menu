@@ -33,10 +33,10 @@ const MenuLink = styled(Link)`
   text-decoration: none;
 `;
 
-/* Array containing menu data:
+/* Menu link data:
 *   name - name to be displayed
 *   route - route activated by clicking
-*   icon - name of fontawesome icon
+*   icon - fontawesome icon to be used
 *   rotation - degrees of rotation of the icon
 * */
 const menuLinks = [

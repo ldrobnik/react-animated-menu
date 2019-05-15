@@ -18,10 +18,20 @@ const defaultStyle = {
 
 // Definition of behaviour
 const transitionStyles = {
-    entering: {opacity: 1},
-    entered: {opacity: 1},
-    exiting: {opacity: 0},
-    exited: {opacity: 0}
+    entering: {
+        opacity: 1,
+        filter: 'blur(3px)'
+    },
+    entered: {
+        opacity: 1
+    },
+    exiting: {
+        opacity: 0,
+        filter: 'blur(3px)'
+    },
+    exited: {
+        opacity: 0
+    }
 };
 
 /* STYLES */

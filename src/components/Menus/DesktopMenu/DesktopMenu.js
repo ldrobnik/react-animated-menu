@@ -27,63 +27,65 @@ const MenuLink = styled(Link)`
 *   route - route activated by clicking
 * */
 
-// Links displayed on top of side menu
-const topSideLinks = [
-    {
-        name: 'Home',
-        route: '/'
-    },
-    {
-        name: 'Flights',
-        route: '/flights/'
-    },
-];
-
-// Remaining links of the side menu
-const bottomSideLinks = [
-    {
-        name: 'About Us',
-        route: '/about/'
-    },
-    {
-        name: 'FAQ',
-        route: '/faq/'
-    },
-    {
-        name: 'Support',
-        route: '/support/'
-    },
-    {
-        name: 'Contact Us',
-        route: '/contact/'
-    }
-];
-
-// Links displayed in the main menu
-const mainLinks = [
-    {
-        name: 'Profile',
-        route: '/profile/'
-    },
-    {
-        name: 'My Bookings',
-        route: '/bookings/'
-    },
-    {
-        name: 'My Payments',
-        route: '/payments/'
-    },
-    {
-        name: 'Log Out',
-        route: '/logout/'
-    },
-    {
-        name: 'Resume Application',
-        route: '/resume/'
-    }
-];
 
 function MobileMenu(props) {
+
+    // Links displayed on top of side menu
+    const topSideLinks = [
+        {
+            name: 'Home',
+            route: '/'
+        },
+        {
+            name: 'Flights',
+            route: '/flights/'
+        },
+    ];
+
+// Remaining links of the side menu
+    const bottomSideLinks = [
+        {
+            name: 'About Us',
+            route: '/about/'
+        },
+        {
+            name: 'FAQ',
+            route: '/faq/'
+        },
+        {
+            name: 'Support',
+            route: '/support/'
+        },
+        {
+            name: 'Contact Us',
+            route: '/contact/'
+        }
+    ];
+
+// Links displayed in the main menu
+    const mainLinks = [
+        {
+            name: 'Profile',
+            route: '/profile/' + (props.firstName + props.surname).toLowerCase() + '/'
+        },
+        {
+            name: 'My Bookings',
+            route: '/bookings/'
+        },
+        {
+            name: 'My Payments',
+            route: '/payments/'
+        },
+        {
+            name: 'Log Out',
+            route: '/logout/'
+        },
+        {
+            name: 'Resume Application',
+            route: '/resume/'
+        }
+    ];
+
     return (
         <React.Fragment>
             <div>Desktop Menu</div>

@@ -30,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         color: #FFF;
         background-color: #EE5F63;
+        font-family: 'Roboto', sans-serif;
         }
 `;
 
@@ -43,6 +44,7 @@ const MenuButton = styled.button`
     
     font-size: 1.5em;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     
     background-color: #EE5F63;

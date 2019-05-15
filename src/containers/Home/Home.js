@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import { CSSTransition } from 'react-transition-group';
+import {CSSTransition} from 'react-transition-group';
+import styled, {createGlobalStyle} from 'styled-components';
 
 import MobileMenu from '../../components/Menus/MobileMenu/MobileMenu';
 import DesktopMenu from '../../components/Menus/DesktopMenu/DesktopMenu';
 
-// React-transition-group-related code
+/* ANIMATIONS */
 
 // Transition duration
 const duration = 300;
@@ -23,7 +24,39 @@ const transitionStyles = {
     exited: {opacity: 0}
 };
 
-function Home(props) {
+/* STYLES */
+
+const GlobalStyle = createGlobalStyle`
+    body {
+        color: #FFF;
+        background-color: #EE5F63;
+        }
+`;
+
+const Wrapper = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+`;
+
+const MenuButton = styled.button`
+    font-size: 1em;
+    padding: 0.25em 1em;
+    border-radius: 2px;
+    background-color: #EE5F63;
+    color: #FFF;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    
+    :hover {
+        background-color: #F8B6B8;
+    }
+`;
+
+function Home() {
 
     // Specifies the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -49,25 +82,29 @@ function Home(props) {
     const isMobile = windowWidth <= 500;
 
     // A constant specifying whether and which menu (mobile or desktop) should be displayed
-    const menu = isMobile ? <MobileMenu hideMenu={() => setShowMenu(false)}/> : <DesktopMenu hideMenu={() => setShowMenu(false)}/>;
+    const menu = isMobile ? <MobileMenu hideMenu={() => setShowMenu(false)}/> :
+        <DesktopMenu hideMenu={() => setShowMenu(false)}/>;
 
     return (
         <React.Fragment>
-            <button onClick={() => setShowMenu(true)}>Menu</button>
-            <CSSTransition
-                in={showMenu}
-                timeout={duration}>
-                {state => (
-                    <div style={{
-                        ...defaultStyle,
-                        ...transitionStyles[state]
-                    }}>
-                        <div>{menu}</div>
-                    </div>
+            <GlobalStyle />
+            <Wrapper>
+                <MenuButton onClick={() => setShowMenu(true)}>Menu</MenuButton>
+                <CSSTransition
+                    in={showMenu}
+                    timeout={duration}>
+                    {state => (
+                        <div style={{
+                            ...defaultStyle,
+                            ...transitionStyles[state]
+                        }}>
+                            {menu}
+                        </div>
 
-                )}
+                    )}
 
-            </CSSTransition>
+                </CSSTransition>
+            </Wrapper>
         </React.Fragment>
     );
 

@@ -11,7 +11,12 @@ import {
     faInfoCircle
 } from '@fortawesome/free-solid-svg-icons';
 
-// Menu link data
+/* Array containing menu data
+*   name - name to be displayed
+*   route - route activated by clicking
+*   icon - name of fontawesome icon
+*   rotation - degrees of rotation of the icon
+* */
 const menuLinks = [
     {
         name: 'Profile',

@@ -14,9 +14,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
-/* ANIMATIONS */
-
-
 /* STYLES */
 
 const MenuContainer = styled.div`
@@ -40,13 +37,21 @@ const Logo = styled.div`
     margin: 0.1em;
 `;
 
+const Header = styled.div`
+
+`;
+
 const LinkContainer = styled.p`
-  margin: 0.5em;
+  margin: 0;
   border-top: solid 1px ${props => props.theme.lightMainColor};
-  padding: 8px 2px 2px 2px;
+  padding: 8px 6px;
   
   :first-of-type {
   border-top: none;
+  }
+  
+  :hover {
+    background-color: ${props => props.theme.lightMainColor};
   }
 `;
 
@@ -57,6 +62,9 @@ const MenuIcon = styled(FontAwesomeIcon)`
 const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
+  display: block;
+  height: 100%;
+  weight: 100%;
 `;
 
 
@@ -130,7 +138,7 @@ function DesktopMenu(props) {
                     onClick={props.hideMenu}
                 >
                     <MenuLink to={link.route}>
-                            <MenuIcon icon={link.icon} transform={{rotate: link.rotation}}/>
+                        <MenuIcon icon={link.icon} transform={{rotate: link.rotation}}/>
                         {link.name}
                     </MenuLink>
                 </LinkContainer>

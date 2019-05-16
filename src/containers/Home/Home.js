@@ -5,7 +5,7 @@ import styled, {createGlobalStyle} from 'styled-components';
 import MobileMenu from '../../components/Menus/MobileMenu/MobileMenu';
 import DesktopMenu from '../../components/Menus/DesktopMenu/DesktopMenu';
 
-/* ANIMATIONS */
+/* TRANSITIONS */
 
 // Transition duration for showing/hiding the menu
 const duration = 300;
@@ -16,7 +16,7 @@ const defaultMenuStyle = {
     opacity: 0
 };
 
-// Transtition styles for the menu
+// Transition styles for the menu
 const menuTransitionStyles = {
     entering: {
         opacity: 1,
@@ -41,7 +41,7 @@ const defaultButtonStyle = {
     opacity: 1
 };
 
-// Transtition styles for the menu button
+// Transition styles for the menu button
 const buttonTransitionStyles = {
     entering: {
         opacity: 1

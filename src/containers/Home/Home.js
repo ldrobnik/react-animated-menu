@@ -16,14 +16,8 @@ const defaultMenuStyle = {
     opacity: 0
 };
 
-// Default button style
-const defaultButtonStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
-    opacity: 1
-};
-
-// Transtition styles for the menu and menu button
-const transitionStyles = {
+// Transtition styles for the menu
+const menuTransitionStyles = {
     entering: {
         opacity: 1,
         filter: 'blur(3px)'
@@ -38,6 +32,28 @@ const transitionStyles = {
     exited: {
         opacity: 0,
         transform: 'translateY(-1000px)'
+    }
+};
+
+// Default button style
+const defaultButtonStyle = {
+    transition: `opacity ${duration}ms ease-in-out`,
+    opacity: 1
+};
+
+// Transtition styles for the menu button
+const buttonTransitionStyles = {
+    entering: {
+        opacity: 1
+    },
+    entered: {
+        opacity: 1
+    },
+    exiting: {
+        opacity: 1
+    },
+    exited: {
+        opacity: 0
     }
 };
 
@@ -170,14 +186,25 @@ function Home() {
         <React.Fragment>
             <GlobalStyle/>
             <Wrapper>
-                <MenuButton onClick={handleMenuShow}>Menu</MenuButton>
+                <CSSTransition
+                    in={showButton}
+                    timeout={duration}>
+                    {state => (
+                        <div style={{
+                            ...defaultButtonStyle,
+                            ...buttonTransitionStyles[state]
+                        }}>
+                            <MenuButton onClick={handleMenuShow}>Menu</MenuButton>
+                        </div>
+                    )}
+                </CSSTransition>
                 <CSSTransition
                     in={showMenu}
                     timeout={duration}>
                     {state => (
                         <div style={{
                             ...defaultMenuStyle,
-                            ...transitionStyles[state]
+                            ...menuTransitionStyles[state]
                         }}>
                             {menu}
                         </div>

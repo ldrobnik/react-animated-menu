@@ -2,12 +2,10 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/node_modules/@fortawesome/free-solid-svg-icons/index.d.ts" />
-    <bookmark url="file://$PROJECT_DIR$/src/containers/Home/Home.js" line="24" />
+    <bookmark url="file://$PROJECT_DIR$/src/containers/Home/Home.js" line="43" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="826c6971-4d2b-4be3-811c-ce876c026833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Home/Home.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="36">
+              <caret line="190" column="37" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="37" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -87,6 +85,7 @@
       <find>userCir</find>
       <find>menuDu</find>
       <find>men</find>
+      <find>menuTransitionStyles</find>
     </findStrings>
     <replaceStrings>
       <replace>duration</replace>
@@ -228,12 +227,12 @@
       <workItem from="1557920872738" duration="13269000" />
       <workItem from="1557946339698" duration="2697000" />
       <workItem from="1557991245926" duration="6401000" />
-      <workItem from="1557998578245" duration="1821000" />
+      <workItem from="1557998578245" duration="2424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44776000" />
+    <option name="totallyTimeSpent" value="45379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="103" width="1118" height="869" extended-state="0" />
@@ -356,8 +355,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="36">
+          <caret line="190" column="37" selection-start-line="190" selection-start-column="37" selection-end-line="190" selection-end-column="37" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

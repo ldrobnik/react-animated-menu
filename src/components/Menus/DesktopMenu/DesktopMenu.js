@@ -52,12 +52,12 @@ const MainMenu = styled.div``;
 
 const LinkContainer = styled.p`
   margin: 2px;
-  padding: 2px;
 `;
 
 const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
+  padding: 2px;
 `;
 
 /* Menu link data:
@@ -170,7 +170,6 @@ function MobileMenu(props) {
                     </LinkContainer>
                 ))}
             </MainMenu>
-            <button onClick={props.hideMenu}>Close</button>
         </MenuContainer>
     );
 }

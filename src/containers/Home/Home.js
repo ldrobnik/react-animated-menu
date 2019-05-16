@@ -170,7 +170,6 @@ function Home() {
         <MobileMenu
             hideMenu={handleMenuHide}
             firstName={userData.firstName}
-            surname={userData.surname}
             balance={formatNumber(userData.balance)}
             image={userData.image}
         /> :

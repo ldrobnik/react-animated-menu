@@ -32,7 +32,7 @@ const MenuContainer = styled.div`
         }
 `;
 
-
+// Header styles
 const Header = styled.div`
   position: relative;
 `;
@@ -54,10 +54,34 @@ const ExitButton = styled.div`
     }
 `;
 
+// User data styles
+
+const UserData = styled.div`
+  width: 100%;
+  text-align: center;
+`;
+
+const UserAvatar = styled.img`
+  
+  height: 2em;
+  width: 2em;
+  
+  margin: 0 auto;
+  padding: 0.5em;
+  
+  border-radius: 50%;
+  background-color: ${props => props.theme.lightColor}
+`;
+
+const UserName = styled.p``;
+
+const UserBalanceInfo = styled.p``;
+
+const UserBalanceValue = styled.p``;
+
 const LinkContainer = styled.p`
   margin: 0;
   border-top: solid 1px ${props => props.theme.lightMainColor};
-  padding: 8px 6px;
   
   :first-of-type {
   border-top: none;
@@ -75,9 +99,11 @@ const MenuIcon = styled(FontAwesomeIcon)`
 const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
+  
   display: block;
   height: 100%;
-  weight: 100%;
+  width: 100%;
+  padding: 8px 6px;
 `;
 
 
@@ -140,6 +166,8 @@ function DesktopMenu(props) {
         }
     ];
 
+    const userImagePath = '/' + props.image + '.png';
+
     return (
         <MenuContainer>
             <Header>
@@ -148,6 +176,12 @@ function DesktopMenu(props) {
                 </Logo>
                 <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
             </Header>
+            <UserData>
+                <UserAvatar src={userImagePath} />
+                <UserName>{props.firstName}</UserName>
+                <UserBalanceInfo>Available Balance</UserBalanceInfo>
+                <UserBalanceValue>&pound;{props.balance}</UserBalanceValue>
+            </UserData>
             {menuLinks.map((link) => (
                 <LinkContainer
                     key={link.name}

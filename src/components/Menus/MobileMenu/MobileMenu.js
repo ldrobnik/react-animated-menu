@@ -32,13 +32,14 @@ const MenuContainer = styled.div`
         }
 `;
 
-const Logo = styled.div`
-    text-align: center;
-    margin: 0.1em;
-`;
 
 const Header = styled.div`
   position: relative;
+`;
+
+const Logo = styled.div`
+    text-align: center;
+    margin: 0.1em;
 `;
 
 const ExitButton = styled.div`

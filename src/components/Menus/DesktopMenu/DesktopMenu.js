@@ -4,6 +4,38 @@ import styled from 'styled-components';
 import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
 /* STYLES */
+const MenuContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+  
+  z-index: 200;
+  
+  background-color: ${props => props.theme.mainColor};
+  
+  ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+        }
+`;
+
+
+const Header = styled.div`
+  position: relative;
+`;
+
+const ExitButton = styled.div`
+  position: absolute;
+    top: 0.2em;
+    right: 0.5em;
+    
+    user-select: none;
+    
+    :hover {
+      color: ${props => props.theme.lightMainColor}
+    }
+`;
 
 const Logo = styled.div`
     text-align: center;
@@ -93,10 +125,13 @@ function MobileMenu(props) {
     ];
 
     return (
-        <React.Fragment>
-            <Logo>
-                <img src={logoImage}/>
-            </Logo>
+        <MenuContainer>
+            <Header>
+                <Logo>
+                    <img src={logoImage}/>
+                </Logo>
+                <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
+            </Header>
             <SideMenu>
                 <TopLinks>
                     {topSideLinks.map((link) => (
@@ -136,7 +171,7 @@ function MobileMenu(props) {
                 ))}
             </MainMenu>
             <button onClick={props.hideMenu}>Close</button>
-        </React.Fragment>
+        </MenuContainer>
     );
 }
 

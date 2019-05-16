@@ -36,14 +36,14 @@ const menuTransitionStyles = {
     }
 };
 
-// Default menu style
-const defaultButtonStyle = {
+// Default style for the button and backdrop
+const defaultGeneralStyle = {
     transition: `opacity ${duration}ms ease-in-out`,
     opacity: 0
 };
 
-// Transition styles for the menu
-const buttonTransitionStyles = {
+// Transition styles for the button and backdrop
+const generalTransitionStyles = {
     entering: {
         opacity: 1
     },
@@ -205,14 +205,25 @@ function Home() {
                         </div>
                     )}
                 </CSSTransition>
-                {backdrop}
+                <CSSTransition
+                    in={showMenu}
+                    timeout={duration}>
+                    {state => (
+                        <div style={{
+                            ...defaultGeneralStyle,
+                            ...generalTransitionStyles[state]
+                        }}>
+                            {backdrop}
+                        </div>
+                    )}
+                </CSSTransition>
                 <CSSTransition
                     in={showButton}
                     timeout={duration}>
                     {state => (
                     <div style={{
-                        ...defaultButtonStyle,
-                        ...buttonTransitionStyles[state]
+                        ...defaultGeneralStyle,
+                        ...generalTransitionStyles[state]
                     }}>
                     {menuButton}
                     </div>

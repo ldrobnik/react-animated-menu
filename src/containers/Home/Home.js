@@ -4,6 +4,7 @@ import styled, {createGlobalStyle} from 'styled-components';
 
 import MobileMenu from '../../components/Menus/MobileMenu/MobileMenu';
 import DesktopMenu from '../../components/Menus/DesktopMenu/DesktopMenu';
+import Backdrop from '../../components/Backdrop/Backdrop';
 
 /* TRANSITIONS */
 
@@ -34,29 +35,6 @@ const menuTransitionStyles = {
         transform: 'translateY(-1000px)'
     }
 };
-
-// Default button style
-const defaultButtonStyle = {
-    transition: `opacity ${duration}ms ease-in-out`,
-    opacity: 1
-};
-
-// Transition styles for the menu button
-const buttonTransitionStyles = {
-    entering: {
-        opacity: 1
-    },
-    entered: {
-        opacity: 1
-    },
-    exiting: {
-        opacity: 1
-    },
-    exited: {
-        opacity: 0
-    }
-};
-
 
 /* STYLES */
 
@@ -166,7 +144,8 @@ function Home() {
         balance: 1500.00,
         image: 'avatar'
     };
-    // A constant specifying whether and which menu (mobile or desktop) should be displayed
+
+    // Specifies whether and which menu (mobile or desktop) should be displayed
     const menu = isMobile ?
         <MobileMenu
             hideMenu={handleMenuHide}
@@ -182,22 +161,15 @@ function Home() {
             image={userData.image}
         />;
 
+    //Specifies whether backdrop should be shown
+    const backdrop = showMenu ? <Backdrop hideMenu={handleMenuHide}/> : null;
+
+    console.log(backdrop);
+
     return (
         <React.Fragment>
             <GlobalStyle/>
             <Wrapper>
-                <CSSTransition
-                    in={showButton}
-                    timeout={duration}>
-                    {state => (
-                        <div style={{
-                            ...defaultButtonStyle,
-                            ...buttonTransitionStyles[state]
-                        }}>
-                            <MenuButton onClick={handleMenuShow}>Menu</MenuButton>
-                        </div>
-                    )}
-                </CSSTransition>
                 <CSSTransition
                     in={showMenu}
                     timeout={duration}>
@@ -210,6 +182,8 @@ function Home() {
                         </div>
                     )}
                 </CSSTransition>
+                {backdrop}
+                <MenuButton onClick={handleMenuShow}>Menu</MenuButton>
             </Wrapper>
         </React.Fragment>
     );

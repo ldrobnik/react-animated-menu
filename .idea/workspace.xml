@@ -7,7 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="826c6971-4d2b-4be3-811c-ce876c026833" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileMenu.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="163" column="23" selection-start-line="163" selection-start-column="23" selection-end-line="163" selection-end-column="23" />
+            <state relative-caret-position="230">
+              <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -88,6 +87,7 @@
       <find>menuTransitionStyles</find>
       <find>transitionStyle</find>
       <find>menuDu</find>
+      <find>avatar</find>
     </findStrings>
     <replaceStrings>
       <replace>duration</replace>
@@ -240,12 +240,12 @@
       <workItem from="1557920872738" duration="13269000" />
       <workItem from="1557946339698" duration="2697000" />
       <workItem from="1557991245926" duration="6401000" />
-      <workItem from="1557998578245" duration="10526000" />
+      <workItem from="1557998578245" duration="11364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53481000" />
+    <option name="totallyTimeSpent" value="54319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="30" y="103" width="1089" height="869" extended-state="0" />
@@ -368,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="163" column="23" selection-start-line="163" selection-start-column="23" selection-end-line="163" selection-end-column="23" />
+        <state relative-caret-position="230">
+          <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

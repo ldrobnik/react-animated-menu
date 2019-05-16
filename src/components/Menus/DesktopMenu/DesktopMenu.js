@@ -124,6 +124,11 @@ const UserAvatar = styled.img`
   padding: 0.5em;
   
   border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: ${props => props.theme.mainColor};
+  box-shadow: 0 0 0 5px ${props => props.theme.lightColor}
+  
   background-color: ${props => props.theme.lightColor}
 `;
 

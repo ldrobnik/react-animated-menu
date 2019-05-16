@@ -36,6 +36,28 @@ const menuTransitionStyles = {
     }
 };
 
+// Default menu style
+const defaultButtonStyle = {
+    transition: `opacity ${duration}ms ease-in-out`,
+    opacity: 0
+};
+
+// Transition styles for the menu
+const buttonTransitionStyles = {
+    entering: {
+        opacity: 1
+    },
+    entered: {
+        opacity: 1
+    },
+    exiting: {
+        opacity: 0
+    },
+    exited: {
+        opacity: 0
+    }
+};
+
 /* STYLES */
 
 // Global style
@@ -164,7 +186,8 @@ function Home() {
     //Specifies whether backdrop should be shown
     const backdrop = showMenu && !isMobile ? <Backdrop hideMenu={handleMenuHide}/> : null;
 
-    console.log(backdrop);
+    //Specifies whether menu button should be shown
+    const menuButton = !showMenu ? <MenuButton onClick={handleMenuShow}>Menu</MenuButton> : null;
 
     return (
         <React.Fragment>
@@ -183,7 +206,19 @@ function Home() {
                     )}
                 </CSSTransition>
                 {backdrop}
-                <MenuButton onClick={handleMenuShow}>Menu</MenuButton>
+                <CSSTransition
+                    in={showButton}
+                    timeout={duration}>
+                    {state => (
+                    <div style={{
+                        ...defaultButtonStyle,
+                        ...buttonTransitionStyles[state]
+                    }}>
+                    {menuButton}
+                    </div>
+                    )}
+                </CSSTransition>
+
             </Wrapper>
         </React.Fragment>
     );

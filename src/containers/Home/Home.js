@@ -16,8 +16,14 @@ const defaultMenuStyle = {
     opacity: 0
 };
 
-// Transtition styles for the menu
-const menuTransitionStyles = {
+// Default button style
+const defaultButtonStyle = {
+    transition: `opacity ${duration}ms ease-in-out`,
+    opacity: 1
+};
+
+// Transtition styles for the menu and menu button
+const transitionStyles = {
     entering: {
         opacity: 1,
         filter: 'blur(3px)'
@@ -30,9 +36,11 @@ const menuTransitionStyles = {
         filter: 'blur(3px)'
     },
     exited: {
-        opacity: 0
+        opacity: 0,
+        transform: 'translateY(-1000px)'
     }
 };
+
 
 /* STYLES */
 
@@ -95,6 +103,23 @@ function Home() {
     // Specifies menu transition
     const [showMenu, setShowMenu] = useState(false);
 
+    // Specifies menu button transition
+    const [showButton, setShowButton] = useState(true);
+
+    // Shows the menu and hides the button
+    const handleMenuShow = () => {
+      setShowMenu(true);
+      setShowButton(false);
+    };
+
+    // Shows the menu and hides the button
+    const handleMenuHide = () => {
+        setShowMenu(false);
+        setShowButton(true);
+    };
+
+    // Hides the menu and shows the button
+
     // Updates the window width
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth);
@@ -127,14 +152,14 @@ function Home() {
     // A constant specifying whether and which menu (mobile or desktop) should be displayed
     const menu = isMobile ?
         <MobileMenu
-            hideMenu={() => setShowMenu(false)}
+            hideMenu={handleMenuHide}
             firstName={userData.firstName}
             surname={userData.surname}
             balance={formatNumber(userData.balance)}
             image={userData.image}
         /> :
         <DesktopMenu
-            hideMenu={() => setShowMenu(false)}
+            hideMenu={handleMenuHide}
             firstName={userData.firstName}
             surname={userData.surname}
             balance={formatNumber(userData.balance)}
@@ -145,14 +170,14 @@ function Home() {
         <React.Fragment>
             <GlobalStyle/>
             <Wrapper>
-                <MenuButton onClick={() => setShowMenu(true)}>Menu</MenuButton>
+                <MenuButton onClick={handleMenuShow}>Menu</MenuButton>
                 <CSSTransition
                     in={showMenu}
                     timeout={duration}>
                     {state => (
                         <div style={{
                             ...defaultMenuStyle,
-                            ...menuTransitionStyles[state]
+                            ...transitionStyles[state]
                         }}>
                             {menu}
                         </div>

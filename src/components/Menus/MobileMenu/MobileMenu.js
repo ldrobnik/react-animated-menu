@@ -13,7 +13,27 @@ import {
     faInfoCircle
 } from '@fortawesome/free-solid-svg-icons';
 
+/* ANIMATIONS */
+
+
 /* STYLES */
+
+const MenuContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  
+  z-index: 200;
+  
+  background-color: ${props => props.theme.mainColor};
+  
+  ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+        }
+`;
+
+
 const LinkContainer = styled.p`
   margin: 0.5em;
   border-top: solid 1px ${props => props.theme.lightMainColor};
@@ -94,7 +114,7 @@ function DesktopMenu(props) {
     ];
 
     return (
-        <React.Fragment>
+        <MenuContainer>
             <div>Mobile Menu</div>
             {menuLinks.map((link) => (
                 <LinkContainer
@@ -108,7 +128,7 @@ function DesktopMenu(props) {
                 </LinkContainer>
             ))}
             <button onClick={props.hideMenu}>Close</button>
-        </React.Fragment>
+        </MenuContainer>
     );
 }
 

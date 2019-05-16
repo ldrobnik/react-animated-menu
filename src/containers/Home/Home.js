@@ -68,12 +68,13 @@ const MenuButton = styled.button`
     top: calc(50% - 3em);
     left: calc(50% - 3em);
     
-    border-radius: 3px;
     border-style: solid;
-    border-width: 4px;
-    border-color: ${props => props.theme.lightColor};
+    border-width: 1px;
+    border-color: ${props => props.theme.veryLightMainColor};
     
     cursor: pointer;
+    
+    z-index: 0;
     
     :hover {
         background-color: ${props => props.theme.lightMainColor};

@@ -38,8 +38,8 @@ const transitionStyles = {
 
 const GlobalStyle = createGlobalStyle`
     body {
-        color: #FFF;
-        background-color: #EE5F63;
+        color: ${props => props.theme.lightColor};
+        background-color: ${props => props.theme.mainColor};
         font-family: 'Roboto', sans-serif;
         }
 `;
@@ -57,8 +57,8 @@ const MenuButton = styled.button`
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     
-    background-color: #EE5F63;
-    color: #FFF;
+    background-color: ${props => props.theme.mainColor};
+    color: ${props => props.theme.lightColor};
     
     padding: 0.25em 1em;
     width: 6em;
@@ -70,12 +70,12 @@ const MenuButton = styled.button`
     border-radius: 3px;
     border-style: solid;
     border-width: 4px;
-    border-color: white;
+    border-color: ${props => props.theme.lightColor};
     
     cursor: pointer;
     
     :hover {
-        background-color: #F8B6B8;
+        background-color: ${props => props.theme.lightMainColor};
     }
 `;
 

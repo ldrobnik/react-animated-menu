@@ -18,7 +18,7 @@ const LinkContainer = styled.p`
 `;
 
 const MenuLink = styled(Link)`
-  color: white;
+  color: ${props => props.theme.lightColor};
   text-decoration: none;
 `;
 

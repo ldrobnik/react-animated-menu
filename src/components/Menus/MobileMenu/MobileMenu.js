@@ -16,7 +16,7 @@ import {
 /* STYLES */
 const LinkContainer = styled.p`
   margin: 0.5em;
-  border-top: solid 1px #F8B6B8;
+  border-top: solid 1px ${props => props.theme.lightMainColor};
   padding: 8px 2px 2px 2px;
   
   :first-of-type {
@@ -29,7 +29,7 @@ const MenuIcon = styled(FontAwesomeIcon)`
 `;
 
 const MenuLink = styled(Link)`
-  color: white;
+  color: ${props => props.theme.lightColor};
   text-decoration: none;
 `;
 

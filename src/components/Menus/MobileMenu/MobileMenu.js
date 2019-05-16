@@ -79,6 +79,8 @@ const UserBalanceInfo = styled.p``;
 
 const UserBalanceValue = styled.p``;
 
+// Link styles
+
 const LinkContainer = styled.p`
   margin: 0;
   border-top: solid 1px ${props => props.theme.lightMainColor};
@@ -106,6 +108,10 @@ const MenuLink = styled(Link)`
   padding: 8px 6px;
 `;
 
+// Help panel styles
+const HelpPanel = styled.div`
+  text-align: center;
+`;
 
 function DesktopMenu(props) {
 
@@ -166,6 +172,7 @@ function DesktopMenu(props) {
         }
     ];
 
+    // Path to the user image
     const userImagePath = '/' + props.image + '.png';
 
     return (
@@ -193,7 +200,11 @@ function DesktopMenu(props) {
                     </MenuLink>
                 </LinkContainer>
             ))}
-
+            <HelpPanel>
+                <p>We're here to help</p>
+                <p>+44 (0) 20 8050 3459</p>
+                <p>support@awaymo.com</p>
+            </HelpPanel>
         </MenuContainer>
     );
 }

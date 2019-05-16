@@ -20,7 +20,7 @@ const MenuContainer = styled.div`
         }
 `;
 
-
+// Header styles
 const Header = styled.div`
   position: relative;
 `;
@@ -42,14 +42,18 @@ const Logo = styled.div`
     margin: 0.1em;
 `;
 
+
+// Side menu styles
 const SideMenu = styled.div``;
 
 const TopLinks = styled.div``;
 
 const BottomLinks = styled.div``;
 
+// Main menu styles
 const MainMenu = styled.div``;
 
+// Link styles
 const LinkContainer = styled.p`
   margin: 2px;
 `;
@@ -58,6 +62,11 @@ const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
   padding: 2px;
+`;
+
+// Help panel styles
+const HelpPanel = styled.div`
+  text-align: center;
 `;
 
 /* Menu link data:
@@ -99,6 +108,27 @@ function MobileMenu(props) {
             route: '/contact/'
         }
     ];
+// User data styles
+
+const UserData = styled.div`
+  width: 100%;
+  text-align: center;
+`;
+
+const UserAvatar = styled.img`
+  
+  height: 2em;
+  width: 2em;
+  
+  margin: 0 auto;
+  padding: 0.5em;
+  
+  border-radius: 50%;
+  background-color: ${props => props.theme.lightColor}
+`;
+
+    const UserDetails = styled.div``;
+
 
 // Links displayed in the main menu
     const mainLinks = [
@@ -124,6 +154,14 @@ function MobileMenu(props) {
         }
     ];
 
+    // Path to the user image
+    const userImagePath = '/' + props.image + '.png';
+
+    // User full name
+    const fullName = props.firstName + ' ' + props.surname;
+
+    // Balance information
+    const balanceInfo = props.balance + ' Available';
     return (
         <MenuContainer>
             <Header>
@@ -159,6 +197,13 @@ function MobileMenu(props) {
                 </BottomLinks>
             </SideMenu>
             <MainMenu>
+                <UserData>
+                    <UserAvatar src={userImagePath} />
+                    <UserDetails>
+                        <p>{fullName}</p>
+                        <p>&pound;{balanceInfo}</p>
+                    </UserDetails>
+                </UserData>
                 {mainLinks.map((link) => (
                     <LinkContainer
                         key={link.name}
@@ -170,6 +215,11 @@ function MobileMenu(props) {
                     </LinkContainer>
                 ))}
             </MainMenu>
+            <HelpPanel>
+                <p>We're here to help</p>
+                <p>+44 (0) 20 8050 3459</p>
+                <p>support@awaymo.com</p>
+            </HelpPanel>
         </MenuContainer>
     );
 }

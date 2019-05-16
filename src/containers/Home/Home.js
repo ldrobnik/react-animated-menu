@@ -60,6 +60,7 @@ const buttonTransitionStyles = {
 
 /* STYLES */
 
+// Global style
 const GlobalStyle = createGlobalStyle`
     body {
         color: ${props => props.theme.lightColor};
@@ -77,7 +78,7 @@ const Wrapper = styled.div`
 
 const MenuButton = styled.button`
     
-    font-size: 1.5em;
+    font-size: ${props => props.theme.largeFont};
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;

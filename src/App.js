@@ -9,7 +9,10 @@ const theme = {
     lightMainColor: '#F38D90',
     veryLightMainColor: '#F8BBBD',
     lightColor: 'white',
-    darkColor: 'black'
+    darkColor: 'black',
+    normalFont: '1em',
+    smallFont: '0.8em',
+    largeFont: '1.5em'
 };
 
 

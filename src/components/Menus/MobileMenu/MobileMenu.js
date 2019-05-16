@@ -17,9 +17,10 @@ import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 /* STYLES */
 
 const MenuContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
+  overflow-x: hidden;
  
   
   z-index: 200;
@@ -40,6 +41,10 @@ const Header = styled.div`
 const Logo = styled.div`
     text-align: center;
     margin: 0.1em;
+    
+    img {
+        user-select: none;
+      }
 `;
 
 const ExitButton = styled.div`
@@ -71,13 +76,33 @@ const UserAvatar = styled.img`
   
   border-radius: 50%;
   background-color: ${props => props.theme.lightColor}
+  
+  user-select: none;
 `;
 
-const UserName = styled.p``;
+const UserName = styled.p`
 
-const UserBalanceInfo = styled.p``;
+  ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+      }
+`;
 
-const UserBalanceValue = styled.p``;
+const UserBalanceInfo = styled.p`
+
+::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+      }
+`;
+
+const UserBalanceValue = styled.p`
+
+::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+      }
+`;
 
 // Link styles
 
@@ -92,6 +117,7 @@ const LinkContainer = styled.p`
   :hover {
     background-color: ${props => props.theme.lightMainColor};
   }
+ 
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`
@@ -106,11 +132,21 @@ const MenuLink = styled(Link)`
   height: 100%;
   width: 100%;
   padding: 8px 6px;
+  
+    ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+      }
 `;
 
 // Help panel styles
 const HelpPanel = styled.div`
   text-align: center;
+  
+  p::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+      }
 `;
 
 function DesktopMenu(props) {

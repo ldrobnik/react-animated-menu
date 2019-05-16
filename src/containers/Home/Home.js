@@ -7,17 +7,17 @@ import DesktopMenu from '../../components/Menus/DesktopMenu/DesktopMenu';
 
 /* ANIMATIONS */
 
-// Transition duration
+// Transition duration for showing/hiding the menu
 const duration = 300;
 
-// Default style
-const defaultStyle = {
+// Default menu style
+const defaultMenuStyle = {
     transition: `opacity ${duration}ms ease-in-out`,
     opacity: 0
 };
 
-// Definition of behaviour
-const transitionStyles = {
+// Transtition styles for the menu
+const menuTransitionStyles = {
     entering: {
         opacity: 1,
         filter: 'blur(3px)'
@@ -41,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme.lightColor};
         background-color: ${props => props.theme.mainColor};
         font-family: 'Roboto', sans-serif;
+
         }
 `;
 
@@ -60,7 +61,7 @@ const MenuButton = styled.button`
     background-color: ${props => props.theme.mainColor};
     color: ${props => props.theme.lightColor};
     
-    padding: 0.25em 1em;
+    padding: 0.25em 0.5em;
     width: 6em;
     height: 3em;
     position: absolute;
@@ -77,6 +78,11 @@ const MenuButton = styled.button`
     :hover {
         background-color: ${props => props.theme.lightMainColor};
     }
+    
+     ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+        }
 `;
 
 function Home() {
@@ -113,7 +119,7 @@ function Home() {
     const userData = {
         firstName: 'Dominik',
         surname: 'Biel',
-        balance:  1500.00,
+        balance: 1500.00,
         image: 'avatar'
     };
     // A constant specifying whether and which menu (mobile or desktop) should be displayed
@@ -135,7 +141,7 @@ function Home() {
 
     return (
         <React.Fragment>
-            <GlobalStyle />
+            <GlobalStyle/>
             <Wrapper>
                 <MenuButton onClick={() => setShowMenu(true)}>Menu</MenuButton>
                 <CSSTransition
@@ -143,8 +149,8 @@ function Home() {
                     timeout={duration}>
                     {state => (
                         <div style={{
-                            ...defaultStyle,
-                            ...transitionStyles[state]
+                            ...defaultMenuStyle,
+                            ...menuTransitionStyles[state]
                         }}>
                             {menu}
                         </div>

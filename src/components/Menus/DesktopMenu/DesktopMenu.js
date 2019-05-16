@@ -1,8 +1,14 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
 /* STYLES */
+
+const Logo = styled.div`
+    text-align: center;
+    margin: 0.1em;
+`;
 
 const SideMenu = styled.div``;
 
@@ -88,7 +94,9 @@ function MobileMenu(props) {
 
     return (
         <React.Fragment>
-            <div>Desktop Menu</div>
+            <Logo>
+                <img src={logoImage}/>
+            </Logo>
             <SideMenu>
                 <TopLinks>
                     {topSideLinks.map((link) => (

@@ -12,6 +12,7 @@ import {
     faQuestionCircle,
     faInfoCircle
 } from '@fortawesome/free-solid-svg-icons';
+import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
 /* ANIMATIONS */
 
@@ -22,6 +23,7 @@ const MenuContainer = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
+ 
   
   z-index: 200;
   
@@ -33,6 +35,10 @@ const MenuContainer = styled.div`
         }
 `;
 
+const Logo = styled.div`
+    text-align: center;
+    margin: 0.1em;
+`;
 
 const LinkContainer = styled.p`
   margin: 0.5em;
@@ -115,7 +121,9 @@ function DesktopMenu(props) {
 
     return (
         <MenuContainer>
-            <div>Mobile Menu</div>
+            <Logo>
+                <img src={logoImage}/>
+            </Logo>
             {menuLinks.map((link) => (
                 <LinkContainer
                     key={link.name}

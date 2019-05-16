@@ -57,6 +57,7 @@ const MenuButton = styled.button`
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
     
     background-color: ${props => props.theme.mainColor};
     color: ${props => props.theme.lightColor};

@@ -162,7 +162,7 @@ function Home() {
         />;
 
     //Specifies whether backdrop should be shown
-    const backdrop = showMenu ? <Backdrop hideMenu={handleMenuHide}/> : null;
+    const backdrop = showMenu && !isMobile ? <Backdrop hideMenu={handleMenuHide}/> : null;
 
     console.log(backdrop);
 

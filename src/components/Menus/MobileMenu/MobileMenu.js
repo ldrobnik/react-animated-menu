@@ -38,7 +38,19 @@ const Logo = styled.div`
 `;
 
 const Header = styled.div`
+  position: relative;
+`;
 
+const ExitButton = styled.div`
+  position: absolute;
+    top: 0.2em;
+    right: 0.5em;
+    
+    user-select: none;
+    
+    :hover {
+      color: ${props => props.theme.lightMainColor}
+    }
 `;
 
 const LinkContainer = styled.p`
@@ -129,9 +141,12 @@ function DesktopMenu(props) {
 
     return (
         <MenuContainer>
-            <Logo>
-                <img src={logoImage}/>
-            </Logo>
+            <Header>
+                <Logo>
+                    <img src={logoImage}/>
+                </Logo>
+                <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
+            </Header>
             {menuLinks.map((link) => (
                 <LinkContainer
                     key={link.name}
@@ -143,7 +158,7 @@ function DesktopMenu(props) {
                     </MenuLink>
                 </LinkContainer>
             ))}
-            <button onClick={props.hideMenu}>Close</button>
+
         </MenuContainer>
     );
 }

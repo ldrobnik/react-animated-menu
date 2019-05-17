@@ -20,7 +20,7 @@ import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 const Header = styled.div`
   position: relative;
   border-bottom: solid 1px ${props => props.theme.lightMainColor};
-  padding: 0.5em;
+  padding: 1em 0.5em;
 `;
 
 const MenuContainer = styled.div`
@@ -42,16 +42,16 @@ const MenuContainer = styled.div`
 
 const Logo = styled.div`
     text-align: center;
-    margin: 0.1em;
     
     img {
         user-select: none;
+        width: 110px;
       }
 `;
 
 const ExitButton = styled.div`
   position: absolute;
-  top: 0.2em;
+  top: 0.8em;
   right: 0.5em;
   
   font-size: 1.2em;

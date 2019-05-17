@@ -28,7 +28,7 @@ const Header = styled.div`
 const ExitButton = styled.div`
   font-size: 1.2em;
   position: absolute;
-  top: 0.2em;
+  top: 1.2em;
   right: 0.5em;
 
   user-select: none;
@@ -42,7 +42,13 @@ const ExitButton = styled.div`
 
 const Logo = styled.div`
     text-align: center;
-    margin: 0.1em;
+    padding: 0.1em;
+    
+    img {
+        user-select: none;
+        width: 110px;
+      }
+    
 `;
 
 

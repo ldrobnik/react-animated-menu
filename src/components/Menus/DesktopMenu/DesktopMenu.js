@@ -173,7 +173,7 @@ const UserAvatar = styled.img`
         <MenuContainer>
             <Header>
                 <Logo>
-                    <img src={logoImage}/>
+                    <img src={logoImage} alt='Awaymo logo'/>
                 </Logo>
                 <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
             </Header>
@@ -205,7 +205,7 @@ const UserAvatar = styled.img`
             </SideMenu>
             <MainMenu>
                 <UserData>
-                    <UserAvatar src={userImagePath} />
+                    <UserAvatar src={userImagePath} alt='User profile photo'/>
                     <UserDetails>
                         <p>{fullName}</p>
                         <p>&pound;{balanceInfo}</p>

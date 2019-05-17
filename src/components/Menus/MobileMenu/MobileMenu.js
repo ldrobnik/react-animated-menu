@@ -219,12 +219,12 @@ function DesktopMenu(props) {
         <MenuContainer>
             <Header>
                 <Logo>
-                    <img src={logoImage}/>
+                    <img src={logoImage} alt='Awaymo logo'/>
                 </Logo>
                 <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
             </Header>
             <UserData>
-                <UserAvatar src={userImagePath}/>
+                <UserAvatar src={userImagePath} alt='User profile photo'/>
                 <UserName>{props.firstName}</UserName>
                 <UserBalanceInfo>Available Balance</UserBalanceInfo>
                 <UserBalanceValue>&pound;{props.balance}</UserBalanceValue>

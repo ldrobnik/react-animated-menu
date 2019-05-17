@@ -66,7 +66,6 @@ const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme.lightColor};
         background-color: ${props => props.theme.mainColor};
         font-family: 'Roboto', sans-serif;
-
         }
 `;
 

@@ -143,7 +143,7 @@ function Home() {
 
     // Changes number format to add comma as thousands separator
     const formatNumber = num => {
-        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+        return num.toFixed(2).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     };
 
     // Add an event listener to monitor the screen width and remove the listener when the component unmounts

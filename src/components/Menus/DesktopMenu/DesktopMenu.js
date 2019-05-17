@@ -26,17 +26,18 @@ const Header = styled.div`
 `;
 
 const ExitButton = styled.div`
+  font-size: 1.2em;
   position: absolute;
-    top: 0.2em;
-    right: 0.5em;
-    
-    user-select: none;
-    
-    cursor: pointer;
-    
-    :hover {
-      color: ${props => props.theme.lightMainColor}
-    }
+  top: 0.2em;
+  right: 0.5em;
+
+  user-select: none;
+
+  cursor: pointer;
+
+  :hover {
+    color: ${props => props.theme.lightMainColor}
+  }
 `;
 
 const Logo = styled.div`

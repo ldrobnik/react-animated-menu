@@ -77,7 +77,7 @@ const Wrapper = styled.div`
 
 const MenuButton = styled.button`
     
-    font-size: ${props => props.theme.largeFont};
+    font-size: 1.4em;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;

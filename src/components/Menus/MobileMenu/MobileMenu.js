@@ -16,12 +16,19 @@ import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
 /* STYLES */
 
+// Header styles
+const Header = styled.div`
+  position: relative;
+  border-bottom: solid 1px ${props => props.theme.lightMainColor};
+  padding: 0.5em;
+`;
+
 const MenuContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  
+  max-width: 100%;
+  max-height: 100%;
   padding: 0 0.5em;
- 
+  overflow: hidden;
   
   z-index: 200;
   
@@ -31,13 +38,6 @@ const MenuContainer = styled.div`
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
         }
-`;
-
-// Header styles
-const Header = styled.div`
-  position: relative;
-  border-bottom: solid 1px ${props => props.theme.lightMainColor};
-  padding: 0.5em;
 `;
 
 const Logo = styled.div`
@@ -53,6 +53,8 @@ const ExitButton = styled.div`
   position: absolute;
   top: 0.2em;
   right: 0.5em;
+  
+  font-size: 1.2em;
     
   user-select: none;
   

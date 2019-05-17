@@ -54,22 +54,39 @@ const ExitButton = styled.div`
 
 // Styles for container holding SideMenu and MainMenu
 
+// Styles for container holding side and main menus
+const MenuContent = styled.div`
+  display: table;
+  width: 100%;
+`;
+
 // Side menu styles
 const SideMenu = styled.div`
-  width: 40%;
+  width: 30%;
   display: table-cell;
 `;
 
 // Main menu styles
 const MainMenu = styled.div`
-  width: 60%;
+  width: 40%;
+  display: table-cell;
+`;
+
+// Styles for empty margin on the right
+const Margin = styled.div`
+  width: 30%;
   display: table-cell;
 `;
 
 
-const TopLinks = styled.div``;
+const TopLinks = styled.div`
+  font-weight: bold;
+  margin-bottom: 0.8em;
+`;
 
-const BottomLinks = styled.div``;
+const BottomLinks = styled.div`
+  font-weight: bold;
+`;
 
 // User data styles
 
@@ -209,9 +226,42 @@ function DesktopMenu(props) {
                 </Logo>
                 <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
             </Header>
-            <SideMenu>
-                <TopLinks>
-                    {topSideLinks.map((link) => (
+            <MenuContent>
+                <SideMenu>
+                    <TopLinks>
+                        {topSideLinks.map((link) => (
+                            <LinkContainer
+                                key={link.name}
+                                onClick={props.hideMenu}
+                            >
+                                <MenuLink to={link.route}>
+                                    {link.name}
+                                </MenuLink>
+                            </LinkContainer>
+                        ))}
+                    </TopLinks>
+                    <BottomLinks>
+                        {bottomSideLinks.map((link) => (
+                            <LinkContainer
+                                key={link.name}
+                                onClick={props.hideMenu}
+                            >
+                                <MenuLink to={link.route}>
+                                    {link.name}
+                                </MenuLink>
+                            </LinkContainer>
+                        ))}
+                    </BottomLinks>
+                </SideMenu>
+                <MainMenu>
+                    <UserData>
+                        <UserAvatar src={userImagePath} alt='User profile photo'/>
+                        <UserDetails>
+                            <p>{fullName}</p>
+                            <p>&pound;{balanceInfo}</p>
+                        </UserDetails>
+                    </UserData>
+                    {mainLinks.map((link) => (
                         <LinkContainer
                             key={link.name}
                             onClick={props.hideMenu}
@@ -221,39 +271,9 @@ function DesktopMenu(props) {
                             </MenuLink>
                         </LinkContainer>
                     ))}
-                </TopLinks>
-                <BottomLinks>
-                    {bottomSideLinks.map((link) => (
-                        <LinkContainer
-                            key={link.name}
-                            onClick={props.hideMenu}
-                        >
-                            <MenuLink to={link.route}>
-                                {link.name}
-                            </MenuLink>
-                        </LinkContainer>
-                    ))}
-                </BottomLinks>
-            </SideMenu>
-            <MainMenu>
-                <UserData>
-                    <UserAvatar src={userImagePath} alt='User profile photo'/>
-                    <UserDetails>
-                        <p>{fullName}</p>
-                        <p>&pound;{balanceInfo}</p>
-                    </UserDetails>
-                </UserData>
-                {mainLinks.map((link) => (
-                    <LinkContainer
-                        key={link.name}
-                        onClick={props.hideMenu}
-                    >
-                        <MenuLink to={link.route}>
-                            {link.name}
-                        </MenuLink>
-                    </LinkContainer>
-                ))}
-            </MainMenu>
+                </MainMenu>
+                <Margin />
+            </MenuContent>
             <HelpPanel>
                 <p>We're here to help</p>
                 <p>+44 (0) 20 8050 3459</p>

@@ -174,7 +174,7 @@ function DesktopMenu(props) {
         <MenuContainer>
             <DesktopHeader hideMenu={props.hideMenu}/>
             <MenuContent>
-                <DesktopSideMenu />
+                <DesktopSideMenu hideMenu={props.hideMenu}/>
                 <MainMenu>
                     <UserData>
                         <UserAvatar src={userImagePath} alt='User profile photo'/>

@@ -8,7 +8,6 @@ const MenuContainer = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
- 
   
   z-index: 200;
   
@@ -53,9 +52,20 @@ const ExitButton = styled.div`
   }
 `;
 
+// Styles for container holding SideMenu and MainMenu
 
 // Side menu styles
-const SideMenu = styled.div``;
+const SideMenu = styled.div`
+  width: 40%;
+  display: table-cell;
+`;
+
+// Main menu styles
+const MainMenu = styled.div`
+  width: 60%;
+  display: table-cell;
+`;
+
 
 const TopLinks = styled.div``;
 
@@ -86,10 +96,6 @@ const UserAvatar = styled.img`
 `;
 
 const UserDetails = styled.div``;
-
-
-// Main menu styles
-const MainMenu = styled.div``;
 
 // Link styles
 const LinkContainer = styled.p`
@@ -128,7 +134,7 @@ const EmailLink = styled.a`
 * */
 
 
-function MobileMenu(props) {
+function DesktopMenu(props) {
 
     // Links displayed on top of side menu
     const topSideLinks = [
@@ -257,4 +263,4 @@ function MobileMenu(props) {
     );
 }
 
-export default MobileMenu;
+export default DesktopMenu;

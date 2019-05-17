@@ -175,7 +175,7 @@ const EmailLink = styled.a`
     text-decoration: none;
 `;
 
-function DesktopMenu(props) {
+function MobileMenu(props) {
 
     /* Menu link data:
 *   name - name to be displayed
@@ -271,4 +271,4 @@ function DesktopMenu(props) {
     );
 }
 
-export default DesktopMenu;
+export default MobileMenu;

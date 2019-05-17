@@ -121,15 +121,17 @@ const UserBalanceValue = styled.p`
 
 const LinkContainer = styled.p`
   margin: 0;
-  border-top: solid 1px ${props => props.theme.lightMainColor};
-  
-  :first-of-type {
-  border-top: none;
-  }
+
+    border-top: solid 1px ${props => props.theme.lightMainColor};
   
   :hover {
     background-color: ${props => props.theme.lightMainColor};
   }
+  
+  :first-of-type {
+    border-top: none;
+  }
+
  
 `;
 
@@ -144,12 +146,14 @@ const MenuLink = styled(Link)`
   display: block;
   height: 100%;
   width: 100%;
-  padding: 8px 6px;
+  padding: 1em 0.5em;
   
-    ::selection {
-        color: ${props => props.theme.mainColor};
-        background-color: ${props => props.theme.lightColor};
-      }
+
+  
+  ::selection {
+    color: ${props => props.theme.mainColor};
+    background-color: ${props => props.theme.lightColor};
+  }
 `;
 
 // Help panel styles

@@ -1,31 +1,12 @@
-# React technical test
+# React technical test for Awaymo
 
-The object of this test is to create an animated menu
+Test completed by Łukasz Drobnik
 
-## Getting Started
+## Test objectives
 
-Clone this repository in your local machine.
+The object of the test was to create an animated menu.
 
-### Prerequisites
-
-make sure you have _npm_ installed in your machine
-
-
-### Installing
-
-Use npm to install all the dependencies (from the project folder)
-
-```
-npm i
-```
-
-Start the launcher
-
-```
-npm start
-```
-
-## Objectives
+### Main objectives
 
 - create fully responsive animated menu 
 - should look good on mobile and desktop
@@ -36,7 +17,9 @@ npm start
 - use **react-transition-group** to manage animations
 - use **fontawesome**
 
-## Screen designs
+### Screen designs
 ![mobile](<https://raw.githubusercontent.com/Awaymo/react-technical-test/master/design/mobile.png>)
 
 ![desktop](<https://raw.githubusercontent.com/Awaymo/react-technical-test/master/design/desktop.png>)
+
+## Project structure

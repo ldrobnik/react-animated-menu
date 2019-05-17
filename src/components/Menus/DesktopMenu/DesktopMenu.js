@@ -139,6 +139,9 @@ const MainLinks = styled.div`
 // Link styles
 const LinkContainer = styled.p`
   margin: 2px;
+  :hover {
+    background-color: ${props => props.theme.lightMainColor};
+  }
 `;
 
 const MenuLink = styled(Link)`

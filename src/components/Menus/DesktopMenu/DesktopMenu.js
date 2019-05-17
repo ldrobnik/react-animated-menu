@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
+import DesktopHeader from './Elements/DesktopHeader/DesktopHeader';
+
 /* STYLES */
 
 const MenuContainer = styled.div`
@@ -24,41 +26,6 @@ const MenuContainer = styled.div`
         background-color: ${props => props.theme.lightColor};
         }
 `;
-
-// Header styles
-const Header = styled.div`
-  position: relative;
-  border-bottom: solid 2px ${props => props.theme.lightColor};
-  padding: 1em 0.5em;
-`;
-
-const Logo = styled.div`
-    text-align: center;
-    padding: 0.1em;
-    
-    img {
-        user-select: none;
-        width: 100px;
-      }
-    
-`;
-
-const ExitButton = styled.div`
-  font-size: 1.2em;
-  position: absolute;
-  top: 0.8em;
-  right: 0.5em;
-
-  user-select: none;
-
-  cursor: pointer;
-
-  :hover {
-    color: ${props => props.theme.lightMainColor}
-  }
-`;
-
-// Styles for container holding SideMenu and MainMenu
 
 // Styles for container holding side and main menus
 const MenuContent = styled.div`
@@ -252,12 +219,7 @@ function DesktopMenu(props) {
     const balanceInfo = props.balance + ' Available';
     return (
         <MenuContainer>
-            <Header>
-                <Logo>
-                    <img src={logoImage} alt='Awaymo logo'/>
-                </Logo>
-                <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
-            </Header>
+            <DesktopHeader hideMenu={props.hideMenu}/>
             <MenuContent>
                 <SideMenu>
                     <TopLinks>

@@ -27,7 +27,10 @@ const MenuLink = styled(Link)`
 
 function DesktopMainLinks(props) {
 
-    // Links displayed in the main menu
+    /* Links displayed in the main menu:
+    *   name - name to be displayed
+    *   route - route activated by clicking
+    * */
     const mainLinks = [
         {
             name: 'Profile',

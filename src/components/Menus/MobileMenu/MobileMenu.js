@@ -12,7 +12,9 @@ import {
     faQuestionCircle,
     faInfoCircle
 } from '@fortawesome/free-solid-svg-icons';
-import logoImage from '../../../assets/images/awaymoFullWhite.svg';
+
+import MobileHeader from './MobileHeader/MobileHeader';
+import MobileUserData from './MobileUserData/MobileUserData';
 
 /* STYLES */
 
@@ -33,89 +35,6 @@ const MenuContainer = styled.div`
         }
 `;
 
-// Header styles
-const Header = styled.div`
-  position: relative;
-  border-bottom: solid 1px ${props => props.theme.lightMainColor};
-  padding: 1em 0.5em;
-`;
-
-const Logo = styled.div`
-    text-align: center;
-    
-    img {
-        user-select: none;
-        width: 110px;
-      }
-`;
-
-const ExitButton = styled.div`
-  position: absolute;
-  top: 0.8em;
-  right: 0.5em;
-  
-  font-size: 1.2em;
-    
-  user-select: none;
-  
-  cursor: pointer;
-    
-  :hover {
-    color: ${props => props.theme.lightMainColor}
-  }
-`;
-
-// User data styles
-
-const UserData = styled.div`
-  width: 100%;
-  text-align: center;
-  padding: 1.2em 0;
-`;
-
-const UserAvatar = styled.img`
-  
-  height: 2em;
-  width: 2em;
-  
-  margin: 0 auto;
-  padding: 0.5em;
-  
-  border-radius: 50%;
-  background-color: ${props => props.theme.lightColor}
-  
-  user-select: none;
-`;
-
-const UserName = styled.p`
-
-  font-size: 1em;
-  margin: 0;
-  ::selection {
-        color: ${props => props.theme.mainColor};
-        background-color: ${props => props.theme.lightColor};
-      }
-`;
-
-const UserBalanceInfo = styled.p`
-
-   font-size: 0.8em;
-   margin: 0.1em;
-   ::selection {
-        color: ${props => props.theme.mainColor};
-        background-color: ${props => props.theme.lightColor};
-      }
-`;
-
-const UserBalanceValue = styled.p`
-
-  font-size: 1em;
-  margin: 0;
-  ::selection {
-        color: ${props => props.theme.mainColor};
-        background-color: ${props => props.theme.lightColor};
-      }
-`;
 
 // Link styles
 
@@ -234,23 +153,18 @@ function MobileMenu(props) {
         }
     ];
 
-    // Path to the user image
-    const userImagePath = '/' + props.image + '.png';
 
     return (
         <MenuContainer>
-            <Header>
-                <Logo>
-                    <img src={logoImage} alt='Awaymo logo'/>
-                </Logo>
-                <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
-            </Header>
-            <UserData>
-                <UserAvatar src={userImagePath} alt='User profile photo'/>
-                <UserName>{props.firstName}</UserName>
-                <UserBalanceInfo>Available Balance</UserBalanceInfo>
-                <UserBalanceValue>&pound;{props.balance}</UserBalanceValue>
-            </UserData>
+            <MobileHeader
+                hideMenu={props.hideMenu}
+            />
+            <MobileUserData
+                hideMenu={props.hideMenu}
+                firstName={props.firstName}
+                balance={props.balance}
+                image={props.image}
+            />
             {menuLinks.map((link) => (
                 <LinkContainer
                     key={link.name}

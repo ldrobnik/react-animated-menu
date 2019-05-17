@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import DesktopHeader from './DesktopHeader/DesktopHeader';
 import DesktopSideMenu from './DesktopSideMenu/DesktopSideMenu';
 import DesktopMainMenu from './DesktopMainMenu/DesktopMainMenu';
+import DesktopHelpPanel from './DesktopHelpPanel/DesktopHelpPanel';
 
 /* STYLES */
 
@@ -41,34 +42,6 @@ const Margin = styled.div`
 `;
 
 
-
-// Help panel styles
-const HelpPanel = styled.div`
-  text-align: center;
-  border-top: solid 1px ${props => props.theme.lightMainColor};
-  padding: 0.8em 0;
-  p {
-    font-size: 0.8em;
-    margin: 0.1em;
-  }
-  p::selection {
-        color: ${props => props.theme.mainColor};
-        background-color: ${props => props.theme.lightColor};
-  }
-  
-`;
-
-const EmailLink = styled.a`
-    color: ${props => props.theme.lightColor};
-    text-decoration: none;
-`;
-
-/* Menu link data:
-*   name - name to be displayed
-*   route - route activated by clicking
-* */
-
-
 function DesktopMenu(props) {
 
 
@@ -86,11 +59,7 @@ function DesktopMenu(props) {
                 />
                 <Margin/>
             </MenuContent>
-            <HelpPanel>
-                <p>We're here to help</p>
-                <p>+44 (0) 20 8050 3459</p>
-                <p><EmailLink href='mailto:support@awaymo.com'>support@awaymo.com</EmailLink></p>
-            </HelpPanel>
+            <DesktopHelpPanel />
         </MenuContainer>
     );
 }

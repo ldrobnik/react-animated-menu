@@ -25,7 +25,10 @@ const MenuLink = styled(Link)`
 
 function SideBottomLinks(props) {
 
-    // Links in the bottom part of the side menu
+    /* Links in the bottom part of the side menu
+    *   name - name to be displayed
+    *   route - route activated by clicking
+    * */
     const bottomSideLinks = [
         {
             name: 'About Us',

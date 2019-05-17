@@ -24,7 +24,11 @@ const MenuLink = styled(Link)`
 `;
 
 function SideTopLinks(props) {
-// Links displayed in the top part of the side menu
+
+    /* Links in the top part of the side menu
+    *   name - name to be displayed
+    *   route - route activated by clicking
+    * */
     const topSideLinks = [
         {
             name: 'Home',

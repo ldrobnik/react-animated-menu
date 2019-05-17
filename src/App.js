@@ -8,8 +8,8 @@ const theme = {
     mainColor: '#EE5F63',
     lightMainColor: '#F38D90',
     veryLightMainColor: '#F8BBBD',
-    lightColor: 'white',
-    darkColor: 'black'
+    lightColor: '#FFFFFF',
+    darkColor: '#000000'
 };
 
 

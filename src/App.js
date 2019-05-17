@@ -10,8 +10,8 @@ const theme = {
     veryLightMainColor: '#F8BBBD',
     lightColor: 'white',
     darkColor: 'black',
-    normalFont: '1em',
-    smallFont: '0.8em',
+    smallFont: '0.6em',
+    mediumFont: '0.8em',
     largeFont: '1.5em'
 };
 

@@ -17,10 +17,10 @@ import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 /* STYLES */
 
 const MenuContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
+  padding: 0 0.5em;
  
   
   z-index: 200;
@@ -36,6 +36,8 @@ const MenuContainer = styled.div`
 // Header styles
 const Header = styled.div`
   position: relative;
+  border-bottom: solid 1px ${props => props.theme.lightMainColor};
+  padding: 0.5em;
 `;
 
 const Logo = styled.div`
@@ -49,14 +51,16 @@ const Logo = styled.div`
 
 const ExitButton = styled.div`
   position: absolute;
-    top: 0.2em;
-    right: 0.5em;
+  top: 0.2em;
+  right: 0.5em;
     
-    user-select: none;
+  user-select: none;
+  
+  cursor: pointer;
     
-    :hover {
-      color: ${props => props.theme.lightMainColor}
-    }
+  :hover {
+    color: ${props => props.theme.lightMainColor}
+  }
 `;
 
 // User data styles
@@ -220,7 +224,7 @@ function DesktopMenu(props) {
                 <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
             </Header>
             <UserData>
-                <UserAvatar src={userImagePath} />
+                <UserAvatar src={userImagePath}/>
                 <UserName>{props.firstName}</UserName>
                 <UserBalanceInfo>Available Balance</UserBalanceInfo>
                 <UserBalanceValue>&pound;{props.balance}</UserBalanceValue>

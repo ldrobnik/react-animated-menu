@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import MobileHeader from './MobileHeader/MobileHeader';
 import MobileUserData from './MobileUserData/MobileUserData';
 import MobileLinks from './MobileLinks/MobileLinks';
+import MobileHelpPanel from './MobileHelpPanel/MobileHelpPanel';
 
 /* STYLES */
 
@@ -22,25 +23,6 @@ const MenuContainer = styled.div`
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
         }
-`;
-
-// Help panel styles
-const HelpPanel = styled.div`
-  text-align: center;
-  
-  p {
-    font-size: 0.8em;
-    margin: 0.1em;
-  }
-  p::selection {
-        color: ${props => props.theme.mainColor};
-        background-color: ${props => props.theme.lightColor};
-  }
-`;
-
-const EmailLink = styled.a`
-    color: ${props => props.theme.lightColor};
-    text-decoration: none;
 `;
 
 function MobileMenu(props) {
@@ -62,11 +44,7 @@ function MobileMenu(props) {
                 firstName={props.firstName}
                 surname={props.surname}
             />
-            <HelpPanel>
-                <p>We're here to help</p>
-                <p>+44 (0) 20 8050 3459</p>
-                <p><EmailLink href='mailto:support@awaymo.com'>support@awaymo.com</EmailLink></p>
-            </HelpPanel>
+            <MobileHelpPanel />
         </MenuContainer>
     );
 }

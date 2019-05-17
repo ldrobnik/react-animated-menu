@@ -8,7 +8,7 @@ import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 const MenuContainer = styled.div`
   max-width: 80%;
   max-height: 60%;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
   overflow: auto;

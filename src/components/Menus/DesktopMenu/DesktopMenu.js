@@ -23,12 +23,25 @@ const MenuContainer = styled.div`
 // Header styles
 const Header = styled.div`
   position: relative;
+  border-bottom: solid 2px ${props => props.theme.lightColor};
+  padding: 1em 0.5em;
+`;
+
+const Logo = styled.div`
+    text-align: center;
+    padding: 0.1em;
+    
+    img {
+        user-select: none;
+        width: 100px;
+      }
+    
 `;
 
 const ExitButton = styled.div`
   font-size: 1.2em;
   position: absolute;
-  top: 1.2em;
+  top: 0.8em;
   right: 0.5em;
 
   user-select: none;
@@ -38,17 +51,6 @@ const ExitButton = styled.div`
   :hover {
     color: ${props => props.theme.lightMainColor}
   }
-`;
-
-const Logo = styled.div`
-    text-align: center;
-    padding: 0.1em;
-    
-    img {
-        user-select: none;
-        width: 110px;
-      }
-    
 `;
 
 

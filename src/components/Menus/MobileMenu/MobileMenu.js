@@ -16,13 +16,6 @@ import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
 /* STYLES */
 
-// Header styles
-const Header = styled.div`
-  position: relative;
-  border-bottom: solid 1px ${props => props.theme.lightMainColor};
-  padding: 1em 0.5em;
-`;
-
 const MenuContainer = styled.div`
   
   max-width: 100%;
@@ -38,6 +31,13 @@ const MenuContainer = styled.div`
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
         }
+`;
+
+// Header styles
+const Header = styled.div`
+  position: relative;
+  border-bottom: solid 1px ${props => props.theme.lightMainColor};
+  padding: 1em 0.5em;
 `;
 
 const Logo = styled.div`

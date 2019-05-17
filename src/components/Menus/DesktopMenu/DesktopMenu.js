@@ -58,6 +58,7 @@ const ExitButton = styled.div`
 const MenuContent = styled.div`
   display: table;
   width: 100%;
+  padding-bottom: 4.5em;
 `;
 
 // Side menu styles
@@ -149,7 +150,8 @@ const MenuLink = styled(Link)`
 // Help panel styles
 const HelpPanel = styled.div`
   text-align: center;
-  
+  border-top: solid 1px ${props => props.theme.lightMainColor};
+  padding: 0.8em 0;
   p {
     font-size: 0.8em;
     margin: 0.1em;

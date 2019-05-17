@@ -156,7 +156,7 @@ function Home() {
     });
 
     // A constant specifying whether the app is displayed on a mobile device
-    const isMobile = windowWidth <= 500;
+    const isMobile = windowWidth <= 570;
 
     // Example user data
     const userData = {

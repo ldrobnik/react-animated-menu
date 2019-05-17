@@ -119,9 +119,20 @@ const UserAvatar = styled.img`
 `;
 
 const UserDetails = styled.div`
+    padding-top: 0.3em;
+    padding-bottom: 1.2em;
     p {
     margin: 0;
     }
+`;
+
+// Styles for container of main menu links
+
+const MainLinks = styled.div`
+  font-weight: bold;
+  clear: left;
+  padding-top: 0.8em;
+  border-top: solid 1px ${props => props.theme.lightMainColor};
 `;
 
 // Link styles
@@ -271,18 +282,20 @@ function DesktopMenu(props) {
                             <p>&pound;{balanceInfo}</p>
                         </UserDetails>
                     </UserData>
-                    {mainLinks.map((link) => (
-                        <LinkContainer
-                            key={link.name}
-                            onClick={props.hideMenu}
-                        >
-                            <MenuLink to={link.route}>
-                                {link.name}
-                            </MenuLink>
-                        </LinkContainer>
-                    ))}
+                    <MainLinks>
+                        {mainLinks.map((link) => (
+                            <LinkContainer
+                                key={link.name}
+                                onClick={props.hideMenu}
+                            >
+                                <MenuLink to={link.route}>
+                                    {link.name}
+                                </MenuLink>
+                            </LinkContainer>
+                        ))}
+                    </MainLinks>
                 </MainMenu>
-                <Margin />
+                <Margin/>
             </MenuContent>
             <HelpPanel>
                 <p>We're here to help</p>

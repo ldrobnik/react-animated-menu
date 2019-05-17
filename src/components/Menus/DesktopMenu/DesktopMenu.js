@@ -61,6 +61,33 @@ const TopLinks = styled.div``;
 
 const BottomLinks = styled.div``;
 
+// User data styles
+
+const UserData = styled.div`
+  width: 100%;
+  text-align: center;
+`;
+
+const UserAvatar = styled.img`
+  
+  height: 2em;
+  width: 2em;
+  
+  margin: 0 auto;
+  padding: 0.5em;
+  
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: ${props => props.theme.mainColor};
+  box-shadow: 0 0 0 3px ${props => props.theme.lightColor}
+  
+  background-color: ${props => props.theme.lightColor}
+`;
+
+const UserDetails = styled.div``;
+
+
 // Main menu styles
 const MainMenu = styled.div``;
 
@@ -134,31 +161,6 @@ function MobileMenu(props) {
             route: '/contact/'
         }
     ];
-// User data styles
-
-const UserData = styled.div`
-  width: 100%;
-  text-align: center;
-`;
-
-const UserAvatar = styled.img`
-  
-  height: 2em;
-  width: 2em;
-  
-  margin: 0 auto;
-  padding: 0.5em;
-  
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: ${props => props.theme.mainColor};
-  box-shadow: 0 0 0 5px ${props => props.theme.lightColor}
-  
-  background-color: ${props => props.theme.lightColor}
-`;
-
-    const UserDetails = styled.div``;
 
 
 // Links displayed in the main menu

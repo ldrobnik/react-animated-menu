@@ -70,6 +70,7 @@ const ExitButton = styled.div`
 const UserData = styled.div`
   width: 100%;
   text-align: center;
+  padding: 1.2em 0;
 `;
 
 const UserAvatar = styled.img`
@@ -88,6 +89,8 @@ const UserAvatar = styled.img`
 
 const UserName = styled.p`
 
+  font-size: 1em;
+  margin: 0;
   ::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
@@ -96,7 +99,9 @@ const UserName = styled.p`
 
 const UserBalanceInfo = styled.p`
 
-::selection {
+   font-size: 0.8em;
+   margin: 0.1em;
+   ::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
       }
@@ -104,7 +109,9 @@ const UserBalanceInfo = styled.p`
 
 const UserBalanceValue = styled.p`
 
-::selection {
+  font-size: 1em;
+  margin: 0;
+  ::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
       }

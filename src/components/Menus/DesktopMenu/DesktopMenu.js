@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
 /* STYLES */
+
 const MenuContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  max-width: 90%;
+  max-height: 60%;
+  overflow: auto;
   
   z-index: 200;
   

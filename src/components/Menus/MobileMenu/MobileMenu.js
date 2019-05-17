@@ -167,7 +167,7 @@ const HelpPanel = styled.div`
   p::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
-      }
+  }
 `;
 
 const EmailLink = styled.a`

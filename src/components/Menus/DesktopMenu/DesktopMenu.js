@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
-import logoImage from '../../../assets/images/awaymoFullWhite.svg';
 
-import DesktopHeader from './Elements/DesktopHeader/DesktopHeader';
+import DesktopHeader from './DesktopHeader/DesktopHeader';
+import DesktopSideMenu from './DesktopSideMenu/DesktopSideMenu';
 
 /* STYLES */
 
@@ -34,12 +34,6 @@ const MenuContent = styled.div`
   padding-bottom: 4.5em;
 `;
 
-// Side menu styles
-const SideMenu = styled.div`
-  width: 25%;
-  display: table-cell;
-  padding: 0.8em;
-`;
 
 // Main menu styles
 const MainMenu = styled.div`
@@ -54,15 +48,6 @@ const Margin = styled.div`
   display: table-cell;
 `;
 
-
-const TopLinks = styled.div`
-  font-weight: bold;
-  margin-bottom: 0.8em;
-`;
-
-const BottomLinks = styled.div`
-  font-weight: bold;
-`;
 
 // User data styles
 
@@ -152,38 +137,6 @@ const EmailLink = styled.a`
 
 function DesktopMenu(props) {
 
-    // Links displayed on top of side menu
-    const topSideLinks = [
-        {
-            name: 'Home',
-            route: '/'
-        },
-        {
-            name: 'Flights',
-            route: '/flights/'
-        },
-    ];
-
-// Remaining links of the side menu
-    const bottomSideLinks = [
-        {
-            name: 'About Us',
-            route: '/about/'
-        },
-        {
-            name: 'FAQ',
-            route: '/faq/'
-        },
-        {
-            name: 'Support',
-            route: '/support/'
-        },
-        {
-            name: 'Contact Us',
-            route: '/contact/'
-        }
-    ];
-
 
 // Links displayed in the main menu
     const mainLinks = [
@@ -221,32 +174,7 @@ function DesktopMenu(props) {
         <MenuContainer>
             <DesktopHeader hideMenu={props.hideMenu}/>
             <MenuContent>
-                <SideMenu>
-                    <TopLinks>
-                        {topSideLinks.map((link) => (
-                            <LinkContainer
-                                key={link.name}
-                                onClick={props.hideMenu}
-                            >
-                                <MenuLink to={link.route}>
-                                    {link.name}
-                                </MenuLink>
-                            </LinkContainer>
-                        ))}
-                    </TopLinks>
-                    <BottomLinks>
-                        {bottomSideLinks.map((link) => (
-                            <LinkContainer
-                                key={link.name}
-                                onClick={props.hideMenu}
-                            >
-                                <MenuLink to={link.route}>
-                                    {link.name}
-                                </MenuLink>
-                            </LinkContainer>
-                        ))}
-                    </BottomLinks>
-                </SideMenu>
+                <DesktopSideMenu />
                 <MainMenu>
                     <UserData>
                         <UserAvatar src={userImagePath} alt='User profile photo'/>

@@ -62,19 +62,21 @@ const MenuContent = styled.div`
 
 // Side menu styles
 const SideMenu = styled.div`
-  width: 30%;
+  width: 25%;
   display: table-cell;
+  padding: 0.8em;
 `;
 
 // Main menu styles
 const MainMenu = styled.div`
-  width: 40%;
+  width: 50%;
   display: table-cell;
+  padding: 0.8em;
 `;
 
 // Styles for empty margin on the right
 const Margin = styled.div`
-  width: 30%;
+  width: 25%;
   display: table-cell;
 `;
 
@@ -92,7 +94,9 @@ const BottomLinks = styled.div`
 
 const UserData = styled.div`
   width: 100%;
-  text-align: center;
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.9em;
 `;
 
 const UserAvatar = styled.img`
@@ -100,19 +104,25 @@ const UserAvatar = styled.img`
   height: 2em;
   width: 2em;
   
-  margin: 0 auto;
+  margin-right: 1em;
   padding: 0.5em;
   
   border-radius: 50%;
   border-style: solid;
   border-width: 2px;
   border-color: ${props => props.theme.mainColor};
-  box-shadow: 0 0 0 3px ${props => props.theme.lightColor}
+  box-shadow: 0 0 0 3px ${props => props.theme.lightColor};
   
   background-color: ${props => props.theme.lightColor}
+  
+  float: left;
 `;
 
-const UserDetails = styled.div``;
+const UserDetails = styled.div`
+    p {
+    margin: 0;
+    }
+`;
 
 // Link styles
 const LinkContainer = styled.p`

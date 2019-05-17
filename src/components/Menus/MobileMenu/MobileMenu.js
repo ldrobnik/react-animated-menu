@@ -160,10 +160,19 @@ const MenuLink = styled(Link)`
 const HelpPanel = styled.div`
   text-align: center;
   
+  p {
+    font-size: 0.8em;
+    margin: 0.1em;
+  }
   p::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
       }
+`;
+
+const EmailLink = styled.a`
+    color: ${props => props.theme.lightColor};
+    text-decoration: none;
 `;
 
 function DesktopMenu(props) {
@@ -256,7 +265,7 @@ function DesktopMenu(props) {
             <HelpPanel>
                 <p>We're here to help</p>
                 <p>+44 (0) 20 8050 3459</p>
-                <p>support@awaymo.com</p>
+                <p><EmailLink href='mailto:support@awaymo.com'>support@awaymo.com</EmailLink></p>
             </HelpPanel>
         </MenuContainer>
     );

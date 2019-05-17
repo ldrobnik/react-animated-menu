@@ -23,3 +23,5 @@ The object of the test was to create an animated menu.
 ![desktop](<https://raw.githubusercontent.com/Awaymo/react-technical-test/master/design/desktop.png>)
 
 ## Project structure
+
+

@@ -21,18 +21,23 @@ const defaultMenuStyle = {
 const menuTransitionStyles = {
     entering: {
         opacity: 1,
-        filter: 'blur(3px)'
+        filter: 'blur(3px)',
+        transform: 'skew(5deg, 10deg)'
     },
     entered: {
-        opacity: 1
+        opacity: 1,
+        height: '100%'
     },
     exiting: {
         opacity: 0,
-        filter: 'blur(3px)'
+        filter: 'blur(3px)',
+        height: '50%',
+        transform: 'skew(10deg, 5deg)'
     },
     exited: {
         opacity: 0,
-        transform: 'translateY(-1000px)'
+        transform: 'translateY(-1000px)',
+        height: '100%'
     }
 };
 
@@ -66,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
         color: ${props => props.theme.lightColor};
         background-color: ${props => props.theme.mainColor};
         font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
         }
 `;
 

@@ -70,9 +70,8 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Wrapper = styled.div`
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+    height: 100%;
+    width: 100%;
 `;
 
 const MenuButton = styled.button`

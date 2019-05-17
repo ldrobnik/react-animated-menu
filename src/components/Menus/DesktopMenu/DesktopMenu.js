@@ -13,6 +13,8 @@ const MenuContainer = styled.div`
   margin-right: auto;
   overflow: auto;
   
+  position: relative;
+  
   z-index: 200;
   
   background-color: ${props => props.theme.mainColor};

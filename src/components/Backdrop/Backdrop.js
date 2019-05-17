@@ -5,12 +5,12 @@ import styled from 'styled-components';
 
 const BackdropBody = styled.div`
     background-color: ${props => props.darkColor};
-    opacity: 0.8;
-    position: absolute;
+    position: fixed;
+    left: 0;
     top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
     z-index: 100;
 `;
 

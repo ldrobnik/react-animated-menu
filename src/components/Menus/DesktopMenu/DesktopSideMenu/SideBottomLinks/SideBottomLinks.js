@@ -7,7 +7,7 @@ import styled from 'styled-components';
 // Link styles
 
 const BottomLinks = styled.div`
-  font-weight: bold;
+  font-weight: bold; 
 `;
 
 const LinkContainer = styled.p`
@@ -21,6 +21,11 @@ const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
   padding: 2px;
+  
+  ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+  }
 `;
 
 function SideBottomLinks(props) {

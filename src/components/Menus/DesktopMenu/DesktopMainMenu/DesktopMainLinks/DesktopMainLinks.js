@@ -23,6 +23,11 @@ const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
   padding: 2px;
+  
+  ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+  }
 `;
 
 function DesktopMainLinks(props) {

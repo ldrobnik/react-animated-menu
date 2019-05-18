@@ -24,7 +24,7 @@ const EmailLink = styled.a`
 function MobileHelpPanel() {
     return(
         <HelpPanel>
-            <p>We're here to help</p>
+            <p>We’re here to help</p>
             <p>+44 (0) 20 8050 3459</p>
             <p><EmailLink href='mailto:support@awaymo.com'>support@awaymo.com</EmailLink></p>
         </HelpPanel>

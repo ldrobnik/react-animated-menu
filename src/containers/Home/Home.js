@@ -72,6 +72,7 @@ const GlobalStyle = createGlobalStyle`
         background-color: ${props => props.theme.mainColor};
         font-family: 'Roboto', sans-serif;
         overflow-x: hidden;
+        
         }
 `;
 

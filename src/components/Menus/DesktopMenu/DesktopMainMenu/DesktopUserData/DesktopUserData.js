@@ -26,6 +26,8 @@ const UserAvatar = styled.img`
   background-color: ${props => props.theme.lightColor}
   
   float: left;
+  
+  user-select: none;
 `;
 
 const UserDetails = styled.div`
@@ -34,6 +36,11 @@ const UserDetails = styled.div`
     p {
     margin: 0;
     }
+    
+    p::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+  }
 `;
 
 function DesktopUserData(props) {

@@ -11,11 +11,11 @@ const UserData = styled.div`
 
 const UserAvatar = styled.img`
   
-  height: 2em;
-  width: 2em;
+  height: 1.5em;
+  width: 1.5em;
   
-  margin-right: 1em;
-  padding: 0.5em;
+  margin: 0.4em 1.2em 0.4em 0.4em;
+  padding: 0.4em;
   
   border-radius: 50%;
   border-style: solid;

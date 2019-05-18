@@ -21,7 +21,7 @@ const UserAvatar = styled.img`
 `;
 
 const UserName = styled.p`
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 0;
   
   ::selection {

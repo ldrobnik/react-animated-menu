@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="826c6971-4d2b-4be3-811c-ce876c026833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopHelpPanel/DesktopHelpPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopHelpPanel/DesktopHelpPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopUserData/DesktopUserData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopUserData/DesktopUserData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideBottomLinks/SideBottomLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideBottomLinks/SideBottomLinks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,11 +43,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+            <state relative-caret-position="437">
+              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -75,6 +84,42 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
               <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHeader/MobileHeader.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -139,8 +184,6 @@
         <option value="$PROJECT_DIR$/src/components/Backdrop/Backdrop.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileMenu.js" />
-        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" />
-        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/DesktopSideMenu.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainMenu.js" />
@@ -152,6 +195,8 @@
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideBottomLinks/SideBottomLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopHelpPanel/DesktopHelpPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js" />
+        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" />
+        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" />
       </list>
     </option>
   </component>
@@ -327,6 +372,15 @@
               <item name="react-technical-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-technical-test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Menus" type="462c0819:PsiDirectoryNode" />
+              <item name="MobileMenu" type="462c0819:PsiDirectoryNode" />
+              <item name="MobileUserData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-technical-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-technical-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -390,12 +444,12 @@
       <workItem from="1558037574254" duration="3465000" />
       <workItem from="1558079238735" duration="9203000" />
       <workItem from="1558101160563" duration="13153000" />
-      <workItem from="1558165021789" duration="17883000" />
+      <workItem from="1558165021789" duration="18027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102549000" />
+    <option name="totallyTimeSpent" value="102693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="390" y="85" width="1427" height="986" extended-state="0" />
@@ -557,26 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="2" selection-start-line="39" selection-start-column="2" selection-end-line="41" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -597,30 +631,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopHeader/DesktopHeader.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHeader/MobileHeader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -679,8 +693,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="437">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHeader/MobileHeader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

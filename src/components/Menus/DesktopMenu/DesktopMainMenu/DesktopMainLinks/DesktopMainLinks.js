@@ -22,6 +22,7 @@ const LinkContainer = styled.p`
 const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
+  font-size: 1.1em;
   padding: 2px;
   
   ::selection {

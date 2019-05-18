@@ -38,6 +38,7 @@ const MenuIcon = styled(FontAwesomeIcon)`
 const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
+  font-size: 0.8em;
   
   display: block;
   height: 100%;

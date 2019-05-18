@@ -4,7 +4,10 @@ import styled from 'styled-components';
 /* STYLES */
 const HelpPanel = styled.div`
   text-align: center;
+  border-top: solid 1px ${props => props.theme.lightMainColor};
   margin-top: 2em;
+  margin-bottom: 1em;
+  padding-top: 1em;
   
   p {
     font-size: 0.8em;

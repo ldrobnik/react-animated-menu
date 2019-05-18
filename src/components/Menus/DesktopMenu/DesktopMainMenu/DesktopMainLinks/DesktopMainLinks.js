@@ -12,7 +12,7 @@ const linkAnimation = keyframes`
   }
   30% {
     transform: translateX(10px);
-    letter-spacing: 0.3em;
+    letter-spacing: 0.1em;
     opacity: 0.6;
   }
   100% {

@@ -23,6 +23,10 @@ const HelpPanel = styled.div`
 const EmailLink = styled.a`
     color: ${props => props.theme.lightColor};
     text-decoration: none;
+    
+    :hover {
+      color: ${props => props.theme.veryLightMainColor};
+    }
 `;
 
 function DesktopHelpPanel() {

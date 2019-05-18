@@ -28,7 +28,7 @@ const ExitButton = styled.div`
   cursor: pointer;
     
   :hover {
-    color: ${props => props.theme.lightMainColor}
+    color: ${props => props.theme.veryLightMainColor}
   }
 `;
 

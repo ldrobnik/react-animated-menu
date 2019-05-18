@@ -132,23 +132,33 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 - The current window width is monitored through an event listener managed using the **useEffect()** React hook.
 
+- The state is managed using the **useState()** hook.
+
 - The Desktop Menu is displayed with a **backdrop** while the Mobile Menu occupies the entire width of the screen.
 
 - The component manages the animation of the menu, backdrop and button activating the menu using **CSSTransition**.
-
-- The state is managed using the **useState()** hook.
 
 - User data to be displayed in the menu are provided in a constant.
 
 ### MobileMenu.js
 
+- Contains all the components of the Mobile Menu and passes necessary props into them.
+
 #### MobileHeader.js
 
+- Contains the logo and a button to close the menu.
+
 #### MobileUserData.js
+
+- Displays user data: user’s first name, balance and image.
 
 #### MobileLinks.js
 
 #### MobileHelpPanel.js
+
+- It displays contact details to be used should the user need help.
+
+- In the design provided, only the part “We’re here to help” was visible. I didn’t want to bother you with a non-technical question, so I assumed the missing details should also be provided. In a real-life scenario, I would contact the design creator to make sure that really is the case. 
 
 ### Backdrop.js
 
@@ -156,7 +166,11 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 ### DesktopMenu.js
 
+- Contains all the components of the Mobile Menu and passes necessary props into them.
+
 #### DesktopHeader.js
+
+- Just like in the Mobile Menu, it contains the logo and a button to close the menu.
 
 #### DesktopSideMenu.js
 
@@ -168,9 +182,13 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 #### DesktopUserData.js
 
+- Displays user data: user’s full name, balance and image.
+
 #### DesktopMainLinks.js
 
 #### DesktopHelpPanel.js
+
+- Just like in the Mobile Menu, it displays contact details to be used should the user need help.
 
 
 

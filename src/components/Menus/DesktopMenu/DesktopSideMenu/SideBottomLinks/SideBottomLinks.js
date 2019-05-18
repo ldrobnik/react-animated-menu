@@ -17,7 +17,7 @@ const linkAnimation = keyframes`
     transform: translateX(0);
     font-size: 1.1em;
   }
-`
+`;
 
 const BottomLinks = styled.div`
   font-weight: bold; 
@@ -25,7 +25,6 @@ const BottomLinks = styled.div`
 
 const LinkContainer = styled.p`
   margin: 2px;
-  
   overflow: hidden;
   
   :hover {

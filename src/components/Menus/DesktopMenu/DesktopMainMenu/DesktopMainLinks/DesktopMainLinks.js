@@ -1,8 +1,23 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 
 /* STYLES */
+
+const linkAnimation = keyframes`
+  0% {
+    transform: translateX(0);
+    font-size: 1.1em;
+  }
+  30% {
+    transform: translateX(10px);
+    font-size: 1.4em;
+  }
+  100% {
+    transform: translateX(0);
+    font-size: 1.1em;
+  }
+`;
 
 const MainLinks = styled.div`
   font-weight: bold;
@@ -13,6 +28,7 @@ const MainLinks = styled.div`
 
 const LinkContainer = styled.p`
   margin: 2px;
+  overflow: hidden;
   
   :hover {
     background-color: ${props => props.theme.lightMainColor};
@@ -28,6 +44,10 @@ const MenuLink = styled(Link)`
   height: 100%;
   width: 100%;
   padding: 2px;
+  
+  :hover {
+    animation: 1s ${linkAnimation} ease;
+  }
   
   ::selection {
     color: ${props => props.theme.mainColor};

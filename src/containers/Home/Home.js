@@ -175,6 +175,7 @@ function Home() {
     const menu = isMobile ?
         <MobileMenu
             hideMenu={handleMenuHide}
+            surname={userData.surname}
             firstName={userData.firstName}
             balance={formatNumber(userData.balance)}
             image={userData.image}

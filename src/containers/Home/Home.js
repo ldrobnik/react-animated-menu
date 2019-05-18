@@ -157,8 +157,11 @@ function Home() {
         }
     });
 
-    // A constant specifying whether the app is displayed on a mobile device
-    const isMobile = windowWidth <= 570;
+    //Specifies breakpoint for mobile devices
+    const mobileBreakpoint = 768;
+
+    // Specifies whether the app is displayed on a mobile device
+    const isMobile = windowWidth <= mobileBreakpoint;
 
     // Example user data to be displayed in the menu
     const userData = {

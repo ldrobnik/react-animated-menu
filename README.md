@@ -26,7 +26,7 @@ The object of the test was to create an animated menu.
 
 My approach was to use different menus for mobile and desktop devices, displayed conditionally based on the current window width.
 
-The project uses **styled-components** for styling and manages menu animations with  **react-transition-group**. It also employs **React-Router-Dom** but strictly for demonstration purposes (all routes point to the Home component).
+The project uses **styled-components** for styling and manages menu animations with  **react-transition-group**. It also employs **React Router DOM** but strictly for demonstration purposes (all routes point to the Home component).
 
 Below, you will find a diagram showing the basic project structure, followed by diagrams presenting the components that make up the mobile and desktop menus (**MobileMenu.js** and **DesktopMenu.js**, respectively).
 
@@ -118,7 +118,7 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 ### App.js
 
-- Its main purpose is to wrap the Home.js component in **ThemeProvider** and define colour variables used throughout the app.
+- Its main purpose is to wrap the Home.js component in **ThemeProvider** and define colour variables used for **styled-components** styling.
 
 - It also defines the single route used in the app.
 
@@ -136,9 +136,9 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 - The Desktop Menu is displayed with a **backdrop** while the Mobile Menu occupies the entire width of the screen.
 
-- The component manages the animation of the menu, backdrop and button activating the menu using **CSSTransition**.
+- The component manages animation of the menu, backdrop and button using **CSSTransition**.
 
-- User data to be displayed in the menu are provided in a constant.
+- User data to be displayed in the menu is provided in a JavaScript object.
 
 ### MobileMenu.js
 
@@ -154,15 +154,15 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 #### MobileLinks.js
 
-- Contains all menu links which are in fact router links (as only one route is defined, they all point to the Home component).
+- Contains all menu links which are in fact **router links** (however, as only one route is defined, they all point to the Home component).
 
-- The **links are rendered dynamically** based on an array of JavaScript objects specifying the name to be displayed, route, **fontawesome** icon to be displayed as well as its rotation.
+- The **links are rendered dynamically based on an array of JavaScript objects** specifying the link name, route, **fontawesome** icon to be displayed as well as its rotation.
 
 #### MobileHelpPanel.js
 
 - Displays contact details to be used should the user need help.
 
-- In the design provided, only the part “We’re here to help” was visible. I didn’t want to bother you with a non-technical question, so I assumed the missing details should also be provided. In a real-life scenario, I would contact the design creator to make sure that really is the case. 
+- In the design provided, only the part “We’re here to help” was visible. I didn’t want to bother you with a non-technical question, so I assumed the missing details should also be presented. In a real-life scenario, I would contact the design creator to make sure that really is the case. 
 
 ### DesktopMenu.js
 
@@ -188,7 +188,7 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 #### DesktopMainMenu.js
 
-- The right-hand part of the menu containing the user data and most important links.
+- The right-hand part of the menu containing user data and most important links.
 
 #### DesktopUserData.js
 
@@ -196,7 +196,7 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 #### DesktopMainLinks.js
 
-- A list of the main, user-specific links.
+- A list of the most-important, user-specific links.
 
 - Again, they are **router links generated from an array of JavaScript objects**
 
@@ -206,7 +206,7 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 ### Backdrop.js
 
-- Displayed as a background of the Desktop Menu. Clicking it closes the menu.
+- Displayed as a background of the Desktop Menu. When clicked, it closes the menu.
 
 
 

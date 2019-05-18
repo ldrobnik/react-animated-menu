@@ -13,10 +13,9 @@ const MenuContainer = styled.div`
   max-height: 60%;
   margin-top: 18vh;
   margin-left: auto;
-  margin-right: auto;
-  overflow: auto;
-  
+  margin-right: auto; 
   position: relative;
+  overflow: auto;
   
   z-index: 200;
   
@@ -36,7 +35,7 @@ const MenuContainer = styled.div`
         }
 `;
 
-// Styles for container holding side and main menus
+// Styles for the container holding the side and main menus
 const MenuContent = styled.div`
   display: table;
   width: 100%;

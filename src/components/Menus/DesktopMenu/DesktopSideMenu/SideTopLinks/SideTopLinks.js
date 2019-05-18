@@ -21,6 +21,10 @@ const MenuLink = styled(Link)`
   color: ${props => props.theme.lightColor};
   text-decoration: none;
   font-size: 1.1em;
+  
+  display: block;
+  height: 100%;
+  width: 100%;
   padding: 2px;
   
   ::selection {

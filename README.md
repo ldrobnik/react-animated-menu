@@ -24,6 +24,10 @@ The object of the test was to create an animated menu.
 
 ## Project structure
 
+My approach was to use different menus for mobile and desktop devices, displayed conditionally based on the current window width.
+
+Below, you will find a diagram showing the basic project structure, followed by diagrams presenting the components that make up the mobile and desktop menus (MobileMenu.js and DesktopMenu.js, respectively).
+
 ### Basic structure
 
         +---------+
@@ -49,7 +53,6 @@ The object of the test was to create an animated menu.
 
 ### Mobile Menu structure
 
-
      +---------------+
      | MobileMenu.js |
      +---------------+
@@ -71,9 +74,6 @@ The object of the test was to create an animated menu.
                 +--------------------+
 
 ### Desktop Menu structure
-
-
-
 
 
        +----------------+
@@ -112,6 +112,37 @@ The object of the test was to create an animated menu.
            +-------+ DesktopHelpPanel.js |
                    +---------------------+
 
+### Home.js
+
+The heart of the project. A stateful component that contains all vital logic.
+
+### MobileMenu.js
+
+#### MobileHeader.js
+
+#### MobileUserData.js
+
+#### MobileLinks.js
+
+#### MobileHelpPanel.js
+
+### DesktopMenu.js
+
+#### DesktopHeader.js
+
+#### DesktopSideMenu.js
+
+#### SideTopLinks.js
+
+#### SideBottomLinks.js
+
+#### DesktopMainMenu.js
+
+#### DesktopUserData.js
+
+#### DesktopMainLinks.js
+
+#### DesktopHelpPanel.js
 
 
 

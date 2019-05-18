@@ -36,7 +36,6 @@ const menuTransitionStyles = {
     },
     exited: {
         opacity: 0,
-        transform: 'translateY(-1000px)',
         height: '100%'
     }
 };
@@ -122,7 +121,7 @@ function Home() {
     // Specifies the current window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-    // Specifies menu transition
+    // Specifies menu and backdrop transition
     const [showMenu, setShowMenu] = useState(false);
 
     // Specifies menu button transition

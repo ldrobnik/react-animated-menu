@@ -118,9 +118,27 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 ### App.js
 
+- Its main purpose is to wrap the Home.js component in **ThemeProvider** and define colour variables used throughout the app.
+
+- It also defines the single route used in the app.
+
 ### Home.js
 
-The heart of the project. A stateful component that contains all vital logic.
+- The heart of the project. A stateful component that contains all vital logic.
+
+- Visually, its main purpose is to provide a button that activates the menu.
+
+- It displays **different versions of the menu depending on the window width**.
+
+- The current window width is monitored through an event listener managed using the **useEffect()** React hook.
+
+- The Desktop Menu is displayed with a **backdrop** while the Mobile Menu occupies the entire width of the screen.
+
+- The component manages the animation of the menu, backdrop and button activating the menu using **CSSTransition**.
+
+- The state is managed using the **useState()** hook.
+
+- User data to be displayed in the menu are provided in a constant.
 
 ### MobileMenu.js
 
@@ -131,6 +149,10 @@ The heart of the project. A stateful component that contains all vital logic.
 #### MobileLinks.js
 
 #### MobileHelpPanel.js
+
+### Backdrop.js
+
+- Displayed as a background of the Desktop Menu. Clicking it closes the menu.
 
 ### DesktopMenu.js
 

@@ -6,7 +6,7 @@ const UserData = styled.div`
   width: 100%;
   text-align: left;
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 1em;
 `;
 
 const UserAvatar = styled.img`

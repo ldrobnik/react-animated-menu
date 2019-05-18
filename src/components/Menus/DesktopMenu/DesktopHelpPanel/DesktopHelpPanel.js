@@ -10,7 +10,7 @@ const HelpPanel = styled.div`
   margin-bottom: 1.5em;
   
   p {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin: 0.1em;
   }
   

@@ -8,14 +8,17 @@ const linkAnimation = keyframes`
   0% {
     transform: translateX(0);
     letter-spacing: normal;
+    opacity: 1;
   }
   30% {
     transform: translateX(10px);
     letter-spacing: 0.3em;
+    opacity: 0.6;
   }
   100% {
     transform: translateX(0);
     letter-spacing: normal;
+    opacity: 1;
   }
 `;
 

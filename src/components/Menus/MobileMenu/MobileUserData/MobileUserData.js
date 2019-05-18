@@ -9,10 +9,8 @@ const UserData = styled.div`
 `;
 
 const UserAvatar = styled.img`
-  
   height: 2em;
   width: 2em;
-  
   margin: 0 auto;
   padding: 0.3em;
   
@@ -23,9 +21,9 @@ const UserAvatar = styled.img`
 `;
 
 const UserName = styled.p`
-
   font-size: 1em;
   margin: 0;
+  
   ::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
@@ -33,9 +31,9 @@ const UserName = styled.p`
 `;
 
 const UserBalanceInfo = styled.p`
-
    font-size: 0.8em;
    margin: 0.1em;
+   
    ::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
@@ -43,7 +41,6 @@ const UserBalanceInfo = styled.p`
 `;
 
 const UserBalanceValue = styled.p`
-
   font-size: 1em;
   margin: 0;
   ::selection {
@@ -57,7 +54,7 @@ function MobileUserData(props) {
     // Path to the user image
     const userImagePath = '/' + props.image + '.png';
 
-    return(
+    return (
         <UserData>
             <UserAvatar src={userImagePath} alt='User profile photo'/>
             <UserName>{props.firstName}</UserName>
@@ -65,7 +62,6 @@ function MobileUserData(props) {
             <UserBalanceValue>&pound;{props.balance}</UserBalanceValue>
         </UserData>
     );
-
 }
 
 export default MobileUserData;

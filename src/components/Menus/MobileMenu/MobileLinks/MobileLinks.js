@@ -17,8 +17,7 @@ import {
 
 const LinkContainer = styled.p`
   margin: 0;
-
-    border-top: solid 1px ${props => props.theme.lightMainColor};
+  border-top: solid 1px ${props => props.theme.lightMainColor};
   
   :hover {
     background-color: ${props => props.theme.lightMainColor};
@@ -26,9 +25,7 @@ const LinkContainer = styled.p`
   
   :first-of-type {
     border-top: none;
-  }
-
- 
+  } 
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`
@@ -44,9 +41,7 @@ const MenuLink = styled(Link)`
   height: 100%;
   width: 100%;
   padding: 1em 0.5em;
-  
-
-  
+    
   ::selection {
     color: ${props => props.theme.mainColor};
     background-color: ${props => props.theme.lightColor};
@@ -54,12 +49,13 @@ const MenuLink = styled(Link)`
 `;
 
 function MobileLinks(props) {
+
     /* Menu link data:
-*   name - name to be displayed
-*   route - route activated by clicking
-*   icon - fontawesome icon to be used
-*   rotation - degrees of rotation of the icon
-* */
+    *   name - name to be displayed
+    *   route - route activated by clicking
+    *   icon - fontawesome icon to be used
+    *   rotation - degrees of rotation of the icon
+    */
     const menuLinks = [
         {
             name: 'Profile',

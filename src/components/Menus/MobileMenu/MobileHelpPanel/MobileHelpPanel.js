@@ -13,6 +13,7 @@ const HelpPanel = styled.div`
     font-size: 0.8em;
     margin: 0.1em;
   }
+  
   p::selection, a::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
@@ -25,7 +26,7 @@ const EmailLink = styled.a`
 `;
 
 function MobileHelpPanel() {
-    return(
+    return (
         <HelpPanel>
             <p>We’re here to help</p>
             <p>+44 (0) 20 8050 3459</p>

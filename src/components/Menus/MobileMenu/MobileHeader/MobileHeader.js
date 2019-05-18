@@ -25,7 +25,6 @@ const ExitButton = styled.div`
   font-size: 1.2em;
     
   user-select: none;
-  
   cursor: pointer;
     
   :hover {
@@ -34,7 +33,7 @@ const ExitButton = styled.div`
 `;
 
 function MobileHeader(props) {
-    return(
+    return (
         <Header>
             <Logo>
                 <img src={logoImage} alt='Awaymo logo'/>

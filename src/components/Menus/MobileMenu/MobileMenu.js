@@ -9,7 +9,6 @@ import MobileHelpPanel from './MobileHelpPanel/MobileHelpPanel';
 /* STYLES */
 
 const MenuContainer = styled.div`
-  
   max-width: 100%;
   max-height: 100%;
   padding: 0 0.5em;
@@ -26,7 +25,6 @@ const MenuContainer = styled.div`
 `;
 
 function MobileMenu(props) {
-
 
     return (
         <MenuContainer>

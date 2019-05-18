@@ -154,15 +154,15 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 #### MobileLinks.js
 
+- Contains all menu links which are in fact router links (as only one route is defined, they all point to the Home component).
+
+- The **links are rendered dynamically** based on an array of JavaScript objects specifying the name to be displayed, route, **fontawesome** icon to be displayed as well as its rotation.
+
 #### MobileHelpPanel.js
 
-- It displays contact details to be used should the user need help.
+- Displays contact details to be used should the user need help.
 
 - In the design provided, only the part “We’re here to help” was visible. I didn’t want to bother you with a non-technical question, so I assumed the missing details should also be provided. In a real-life scenario, I would contact the design creator to make sure that really is the case. 
-
-### Backdrop.js
-
-- Displayed as a background of the Desktop Menu. Clicking it closes the menu.
 
 ### DesktopMenu.js
 
@@ -174,11 +174,21 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 #### DesktopSideMenu.js
 
+- Contains two groups of secondary links displayed on the left-hand part of the menu.
+
 #### SideTopLinks.js
+
+- The “Home” and “Flights” links, which are **router links generated dynamically from an array of JavaScript objects**.
+
+- The array specifies the name and route of each link.
 
 #### SideBottomLinks.js
 
+- The remaining secondary links, which are also **router links generated from an array of JavaScript objects**.
+
 #### DesktopMainMenu.js
+
+- The right-hand part of the menu containing the user data and most important links.
 
 #### DesktopUserData.js
 
@@ -186,9 +196,17 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 #### DesktopMainLinks.js
 
+- A list of the main, user-specific links.
+
+- Again, they are **router links generated from an array of JavaScript objects**
+
 #### DesktopHelpPanel.js
 
 - Just like in the Mobile Menu, it displays contact details to be used should the user need help.
+
+### Backdrop.js
+
+- Displayed as a background of the Desktop Menu. Clicking it closes the menu.
 
 
 

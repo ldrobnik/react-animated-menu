@@ -25,6 +25,7 @@ const BottomLinks = styled.div`
 
 const LinkContainer = styled.p`
   margin: 2px;
+  height: 1.7em;
   overflow: hidden;
   
   :hover {

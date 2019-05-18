@@ -12,6 +12,7 @@ const TopLinks = styled.div`
 // Link styles
 const LinkContainer = styled.p`
   margin: 2px;
+  
   :hover {
     background-color: ${props => props.theme.lightMainColor};
   }
@@ -50,7 +51,7 @@ function SideTopLinks(props) {
         },
     ];
 
-    return(
+    return (
         <TopLinks>
             {topSideLinks.map((link) => (
                 <LinkContainer

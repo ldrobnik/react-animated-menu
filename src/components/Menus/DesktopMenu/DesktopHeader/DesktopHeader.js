@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import styled from 'styled-components';
 import logoImage from '../../../../assets/images/awaymoFullWhite.svg';
 
@@ -20,7 +20,6 @@ const Logo = styled.div`
       }
 `;
 
-
 const ExitButton = styled.div`
   font-size: 1.2em;
   position: absolute;
@@ -36,9 +35,9 @@ const ExitButton = styled.div`
   }
 `;
 
-
 function DesktopHeader(props) {
-    return(
+
+    return (
         <Header>
             <Logo>
                 <img src={logoImage} alt='Awaymo logo'/>

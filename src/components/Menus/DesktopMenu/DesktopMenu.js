@@ -51,7 +51,6 @@ const Margin = styled.div`
 
 function DesktopMenu(props) {
 
-
     return (
         <MenuContainer>
             <DesktopHeader hideMenu={props.hideMenu}/>

@@ -8,15 +8,16 @@ const HelpPanel = styled.div`
   border-top: solid 1px ${props => props.theme.lightMainColor};
   padding: 0.8em 0;
   margin-bottom: 1.5em;
+  
   p {
     font-size: 0.7em;
     margin: 0.1em;
   }
+  
   p::selection, a::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
-  }
-  
+  }  
 `;
 
 const EmailLink = styled.a`
@@ -24,9 +25,9 @@ const EmailLink = styled.a`
     text-decoration: none;
 `;
 
-
 function DesktopHelpPanel() {
-    return(
+
+    return (
         <HelpPanel>
             <p>We’re here to help</p>
             <p>+44 (0) 20 8050 3459</p>

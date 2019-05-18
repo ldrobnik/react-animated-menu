@@ -11,9 +11,9 @@ const MainLinks = styled.div`
   border-top: solid 1px ${props => props.theme.lightMainColor};
 `;
 
-// Link styles
 const LinkContainer = styled.p`
   margin: 2px;
+  
   :hover {
     background-color: ${props => props.theme.lightMainColor};
   }
@@ -30,8 +30,8 @@ const MenuLink = styled(Link)`
   padding: 2px;
   
   ::selection {
-        color: ${props => props.theme.mainColor};
-        background-color: ${props => props.theme.lightColor};
+    color: ${props => props.theme.mainColor};
+    background-color: ${props => props.theme.lightColor};
   }
 `;
 
@@ -64,8 +64,7 @@ function DesktopMainLinks(props) {
         }
     ];
 
-
-    return(
+    return (
         <MainLinks>
             {mainLinks.map((link) => (
                 <LinkContainer

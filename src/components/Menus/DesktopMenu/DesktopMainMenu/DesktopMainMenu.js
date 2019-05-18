@@ -30,7 +30,6 @@ function DesktopMainMenu(props) {
             />
         </MainMenu>
     );
-
 }
 
 export default DesktopMainMenu;

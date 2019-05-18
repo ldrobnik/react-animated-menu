@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 /* STYLES */
 const UserData = styled.div`
@@ -10,7 +10,6 @@ const UserData = styled.div`
 `;
 
 const UserAvatar = styled.img`
-  
   height: 1.5em;
   width: 1.5em;
   
@@ -33,6 +32,7 @@ const UserAvatar = styled.img`
 const UserDetails = styled.div`
     padding-top: 0.3em;
     padding-bottom: 1.2em;
+    
     p {
     margin: 0;
     }
@@ -44,6 +44,7 @@ const UserDetails = styled.div`
 `;
 
 function DesktopUserData(props) {
+
     // Path to the user image
     const userImagePath = '/' + props.image + '.png';
 

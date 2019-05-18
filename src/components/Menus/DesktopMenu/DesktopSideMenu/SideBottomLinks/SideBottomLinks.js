@@ -4,14 +4,13 @@ import styled from 'styled-components';
 
 /* STYLES */
 
-// Link styles
-
 const BottomLinks = styled.div`
   font-weight: bold; 
 `;
 
 const LinkContainer = styled.p`
   margin: 2px;
+  
   :hover {
     background-color: ${props => props.theme.lightMainColor};
   }
@@ -57,7 +56,8 @@ function SideBottomLinks(props) {
             route: '/contact/'
         }
     ];
-    return(
+
+    return (
         <BottomLinks>
             {bottomSideLinks.map((link) => (
                 <LinkContainer

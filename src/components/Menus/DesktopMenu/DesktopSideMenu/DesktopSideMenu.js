@@ -12,7 +12,6 @@ const SideMenu = styled.div`
   padding: 0.8em;
 `;
 
-
 function DesktopSideMenu(props) {
 
     return (

@@ -7,15 +7,15 @@ import styled, {keyframes} from 'styled-components';
 const linkAnimation = keyframes`
   0% {
     transform: translateX(0);
-    font-size: 1.1em;
+    letter-spacing: normal;
   }
   30% {
     transform: translateX(10px);
-    font-size: 1.4em;
+    letter-spacing: 0.3em;
   }
   100% {
     transform: translateX(0);
-    font-size: 1.1em;
+    letter-spacing: normal;
   }
 `;
 

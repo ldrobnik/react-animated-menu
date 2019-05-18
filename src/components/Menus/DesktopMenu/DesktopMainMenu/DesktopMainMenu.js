@@ -9,7 +9,6 @@ import DesktopMainLinks from './DesktopMainLinks/DesktopMainLinks';
 const MainMenu = styled.div`
   width: 52%;
   display: table-cell;
-  padding: 0.8em;
 `;
 
 function DesktopMainMenu(props) {

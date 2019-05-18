@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const UserData = styled.div`
   width: 100%;
   text-align: center;
-  padding: 1.2em 0;
+  padding: 1.6em 0;
 `;
 
 const UserAvatar = styled.img`
@@ -14,7 +14,7 @@ const UserAvatar = styled.img`
   width: 2em;
   
   margin: 0 auto;
-  padding: 0.5em;
+  padding: 0.3em;
   
   border-radius: 50%;
   background-color: ${props => props.theme.lightColor}

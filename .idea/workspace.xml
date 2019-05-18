@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="826c6971-4d2b-4be3-811c-ce876c026833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="207">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -56,11 +55,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+            <state relative-caret-position="-92">
+              <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -122,7 +133,6 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Backdrop/Backdrop.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/Elements/DesktopHeader/DesktopHeader.js" />
-        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileMenu.js" />
         <option value="$PROJECT_DIR$/src/containers/Home/Home.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/DesktopSideMenu.js" />
@@ -136,12 +146,13 @@
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopUserData/DesktopUserData.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js" />
-        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" />
+        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" />
+        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="271" />
     <option name="y" value="48" />
     <option name="width" value="1427" />
@@ -392,12 +403,12 @@
       <workItem from="1558037574254" duration="3465000" />
       <workItem from="1558079238735" duration="9203000" />
       <workItem from="1558101160563" duration="13153000" />
-      <workItem from="1558165021789" duration="8719000" />
+      <workItem from="1558165021789" duration="9166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93385000" />
+    <option name="totallyTimeSpent" value="93832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="271" y="48" width="1427" height="986" extended-state="0" />
@@ -502,16 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -648,20 +649,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="-92">
+          <caret line="38" column="2" lean-forward="true" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="44" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        <state relative-caret-position="161">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

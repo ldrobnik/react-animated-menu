@@ -5,9 +5,9 @@ import styled from 'styled-components';
 const HelpPanel = styled.div`
   text-align: center;
   border-top: solid 1px ${props => props.theme.lightMainColor};
-  margin-top: 2em;
+  margin-top: 2.8em;
   margin-bottom: 1em;
-  padding-top: 1em;
+  padding-top: 0.8em;
   
   p {
     font-size: 0.8em;

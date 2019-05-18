@@ -12,7 +12,6 @@ const theme = {
     darkColor: '#000000'
 };
 
-
 function App() {
     return (
         <ThemeProvider theme={theme}>

@@ -8,7 +8,7 @@ import Backdrop from '../../components/Backdrop/Backdrop';
 
 /* TRANSITIONS */
 
-// Transition duration for showing/hiding the menu
+// Transition duration for all animations
 const duration = 300;
 
 // Default menu style
@@ -71,7 +71,6 @@ const GlobalStyle = createGlobalStyle`
         background-color: ${props => props.theme.mainColor};
         font-family: 'Roboto', sans-serif;
         overflow-x: hidden;
-        
         }
 `;
 
@@ -81,7 +80,6 @@ const Wrapper = styled.div`
 `;
 
 const MenuButton = styled.button`
-    
     font-size: 1.4em;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
@@ -110,10 +108,10 @@ const MenuButton = styled.button`
         background-color: ${props => props.theme.lightMainColor};
     }
     
-     ::selection {
+    ::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
-        }
+    }
 `;
 
 function Home() {
@@ -129,30 +127,28 @@ function Home() {
 
     // Shows the menu and hides the button
     const handleMenuShow = () => {
-      setShowMenu(true);
-      setShowButton(false);
+        setShowMenu(true);
+        setShowButton(false);
     };
 
     // Shows the menu and hides the button
     const handleMenuHide = () => {
         setShowMenu(false);
         setShowButton(true);
-        window.scrollTo(0, 0); // scrolls back to top for mobile devices
+        window.scrollTo(0, 0); // scrolls back to top - for nicer experience on mobile devices
     };
-
-    // Hides the menu and shows the button
 
     // Updates the window width
     const handleWindowSizeChange = () => {
         setWindowWidth(window.innerWidth);
     };
 
-    // Changes number format to add comma as thousands separator
+    // Changes number format by adding comma as thousands separator
     const formatNumber = num => {
         return num.toFixed(2).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     };
 
-    // Add an event listener to monitor the screen width and remove the listener when the component unmounts
+    // Adds an event listener to monitor the screen width and remove the listener when the component unmounts
     useEffect(() => {
         window.addEventListener('resize', handleWindowSizeChange);
 
@@ -164,7 +160,7 @@ function Home() {
     // A constant specifying whether the app is displayed on a mobile device
     const isMobile = windowWidth <= 570;
 
-    // Example user data
+    // Example user data to be displayed in the menu
     const userData = {
         firstName: 'Dominik',
         surname: 'Biel',
@@ -226,19 +222,17 @@ function Home() {
                     in={showButton}
                     timeout={duration}>
                     {state => (
-                    <div style={{
-                        ...defaultGeneralStyle,
-                        ...generalTransitionStyles[state]
-                    }}>
-                    {menuButton}
-                    </div>
+                        <div style={{
+                            ...defaultGeneralStyle,
+                            ...generalTransitionStyles[state]
+                        }}>
+                            {menuButton}
+                        </div>
                     )}
                 </CSSTransition>
-
             </Wrapper>
         </React.Fragment>
     );
-
 }
 
 export default Home;

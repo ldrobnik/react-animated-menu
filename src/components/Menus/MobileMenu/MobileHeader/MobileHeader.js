@@ -20,7 +20,7 @@ const Logo = styled.div`
 const ExitButton = styled.div`
   position: absolute;
   top: 0.8em;
-  right: 0.5em;
+  right: 0.8em;
   
   font-size: 1.2em;
     

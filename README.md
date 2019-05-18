@@ -26,7 +26,7 @@ The object of the test was to create an animated menu.
 
 My approach was to use different menus for mobile and desktop devices, displayed conditionally based on the current window width.
 
-The project uses **styled-components** for styling and manages menu animations with  **react-transition-group**. It also employs **React-Router-Dom** but strictly for demonstrative purposes (all routes point to the Home component).
+The project uses **styled-components** for styling and manages menu animations with  **react-transition-group**. It also employs **React-Router-Dom** but strictly for demonstration purposes (all routes point to the Home component).
 
 Below, you will find a diagram showing the basic project structure, followed by diagrams presenting the components that make up the mobile and desktop menus (**MobileMenu.js** and **DesktopMenu.js**, respectively).
 
@@ -115,6 +115,8 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
            |       +---------------------+
            +-------+ DesktopHelpPanel.js |
                    +---------------------+
+
+### App.js
 
 ### Home.js
 

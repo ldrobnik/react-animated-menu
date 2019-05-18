@@ -25,7 +25,7 @@ const ExitButton = styled.div`
   font-size: 1.2em;
   position: absolute;
   top: 0.8em;
-  right: 0.5em;
+  right: 0.8em;
 
   user-select: none;
 

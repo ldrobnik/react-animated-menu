@@ -28,6 +28,8 @@ My approach was to use different menus for mobile and desktop devices, displayed
 
 Below, you will find a diagram showing the basic project structure, followed by diagrams presenting the components that make up the mobile and desktop menus (MobileMenu.js and DesktopMenu.js, respectively).
 
+You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/).
+
 ### Basic structure
 
         +---------+

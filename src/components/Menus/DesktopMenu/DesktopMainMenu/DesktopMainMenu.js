@@ -7,7 +7,7 @@ import DesktopMainLinks from './DesktopMainLinks/DesktopMainLinks';
 /* STYLES */
 
 const MainMenu = styled.div`
-  width: 50%;
+  width: 52%;
   display: table-cell;
   padding: 0.8em;
 `;

@@ -7,7 +7,7 @@ import SideBottomLinks from './SideBottomLinks/SideBottomLinks';
 /* STYLES */
 
 const SideMenu = styled.div`
-  width: 25%;
+  width: 28%;
   display: table-cell;
   padding: 0.8em;
 `;

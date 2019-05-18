@@ -41,7 +41,7 @@ const MenuContent = styled.div`
 
 // Styles for empty margin on the right
 const Margin = styled.div`
-  width: 25%;
+  width: 20%;
   display: table-cell;
 `;
 

@@ -7,8 +7,9 @@ const HelpPanel = styled.div`
   text-align: center;
   border-top: solid 1px ${props => props.theme.lightMainColor};
   padding: 0.8em 0;
+  margin-bottom: 1.5em;
   p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin: 0.1em;
   }
   p::selection, a::selection {

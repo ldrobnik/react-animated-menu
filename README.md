@@ -118,7 +118,7 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 ### App.js
 
-- Its main purpose is to wrap the Home.js component in **ThemeProvider** and define colour variables used for **styled-components** styling.
+- Its primary purpose is to wrap the Home.js component in **ThemeProvider** and define colour variables used for **styled-components** styling.
 
 - It also defines the single route used in the app.
 
@@ -198,7 +198,7 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 - A list of the most-important, user-specific links.
 
-- Again, they are **router links generated from an array of JavaScript objects**
+- Again, they are **router links generated from an array of JavaScript objects**.
 
 #### DesktopHelpPanel.js
 

@@ -10,7 +10,7 @@ const HelpPanel = styled.div`
     font-size: 0.8em;
     margin: 0.1em;
   }
-  p::selection {
+  p::selection, a::selection {
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
   }

@@ -9,7 +9,7 @@ import DesktopHelpPanel from './DesktopHelpPanel/DesktopHelpPanel';
 /* STYLES */
 
 const MenuContainer = styled.div`
-  max-width: 80%;
+  max-width: 60%;
   max-height: 60%;
   margin-top: 15%;
   margin-left: auto;
@@ -21,6 +21,10 @@ const MenuContainer = styled.div`
   z-index: 200;
   
   background-color: ${props => props.theme.mainColor};
+  
+  @media (max-width: 1000px) {
+    max-width: 80%;
+  }
   
   ::selection {
         color: ${props => props.theme.mainColor};

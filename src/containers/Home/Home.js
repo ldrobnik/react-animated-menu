@@ -138,6 +138,7 @@ function Home() {
     const handleMenuHide = () => {
         setShowMenu(false);
         setShowButton(true);
+        window.scrollTo(0, 0); // scrolls back to top for mobile devices
     };
 
     // Hides the menu and shows the button

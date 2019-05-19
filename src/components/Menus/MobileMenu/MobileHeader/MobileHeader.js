@@ -13,7 +13,7 @@ const Logo = styled.div`
     
     img {
         user-select: none;
-        width: 110px;
+        width: 140px;
       }
 `;
 

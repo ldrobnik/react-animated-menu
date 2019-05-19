@@ -158,7 +158,7 @@ You can also take a look at a [live demo](https://react-awaymo-test.netlify.com/
 
 - The **links are rendered dynamically based on an array of JavaScript objects** specifying the link name, route, **fontawesome** icon to be displayed as well as its rotation.
 
-- The user profile ID is created from his first name and surname, which of course wouldn’t be a feasible solution in a real-life setting.
+- The user profile ID is created from their first name and surname, which of course wouldn’t be a feasible solution in a real-life setting.
 
 #### MobileHelpPanel.js
 

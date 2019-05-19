@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 /* STYLES */
+
 const UserData = styled.div`
   width: 100%;
   text-align: center;

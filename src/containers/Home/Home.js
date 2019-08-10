@@ -114,6 +114,28 @@ const MenuButton = styled.button`
     }
 `;
 
+const Notice = styled.div`
+  text-align: center;
+  color: ${props => props.theme.lightMainColor};
+  font-size: 0.6em;
+  
+   ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+    }
+  
+  a {
+    color: ${props => props.theme.lightMainColor};
+    text-decoration: none;
+    
+     ::selection {
+        color: ${props => props.theme.mainColor};
+        background-color: ${props => props.theme.lightColor};
+    }
+  }
+  
+`;
+
 function Home() {
 
     // Specifies the current window width
@@ -231,11 +253,11 @@ function Home() {
                             ...generalTransitionStyles[state]
                         }}>
                             {menuButton}
-                            <div>Icons made by <a href="https://www.flaticon.com/authors/eucalyp"
+                            <Notice>Avatar icon made by <a href="https://www.flaticon.com/authors/eucalyp"
                                                   title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/"
                                                                                       title="Flaticon">www.flaticon.com</a> is
                                 licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
-                                               title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                                               title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></Notice>
                         </div>
                     )}
                 </CSSTransition>

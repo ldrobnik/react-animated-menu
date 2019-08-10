@@ -33,8 +33,8 @@ function MobileHelpPanel() {
     return (
         <HelpPanel>
             <p>We’re here to help</p>
-            <p>+44 (0) 20 8050 3459</p>
-            <p><EmailLink href='mailto:support@awaymo.com'>support@awaymo.com</EmailLink></p>
+            <p>+44 (0) 55 5040 5934</p>
+            <p><EmailLink href='support@notanactualdomain.com'>support@notanactualdomain.com</EmailLink></p>
         </HelpPanel>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import logoImage from '../../../../assets/images/awaymoFullWhite.svg';
+import logoImage from '../../../../assets/images/logo.svg';
 
 const Header = styled.div`
   position: relative;

@@ -40,7 +40,7 @@ function DesktopHeader(props) {
     return (
         <Header>
             <Logo>
-                <img src={logoImage} alt='Awaymo logo'/>
+                <img src={logoImage} alt='Company logo'/>
             </Logo>
             <ExitButton onClick={props.hideMenu}> &times;</ExitButton>
         </Header>

@@ -12,6 +12,7 @@ import {
     faQuestionCircle,
     faInfoCircle
 } from '@fortawesome/free-solid-svg-icons';
+import {mobileMenuLinks} from "../../../../assets/data/constants";
 
 /* STYLES */
 
@@ -109,7 +110,7 @@ function MobileLinks(props) {
 
     return (
         <React.Fragment>
-            {menuLinks.map((link) => (
+            {mobileMenuLinks.map((link) => (
                 <LinkContainer
                     key={link.name}
                     onClick={props.hideMenu}

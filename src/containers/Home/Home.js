@@ -132,6 +132,10 @@ const Notice = styled.div`
         color: ${props => props.theme.mainColor};
         background-color: ${props => props.theme.lightColor};
     }
+    
+    &:hover {
+      color: ${props => props.theme.veryLightMainColor};
+    }
   }
   
 `;

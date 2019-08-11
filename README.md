@@ -21,7 +21,7 @@ The project uses **styled-components** for styling and manages menu animations w
 
 Below, you will find a diagram showing the basic project structure, followed by diagrams presenting the components that make up the mobile and desktop menus (**MobileMenu.js** and **DesktopMenu.js**, respectively).
 
-You can also take a look at a [live demo](react-animated-menu.netlify.com).
+You can also take a look at a [live demo](https://react-animated-menu.netlify.com).
 
 ### Basic project structure
 

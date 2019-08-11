@@ -7,7 +7,44 @@ import {
     faUserCircle
 } from "@fortawesome/free-solid-svg-icons";
 
-/* Menu link data:
+// Example user data to be displayed in the menu
+const userData = {
+    firstName: 'Viktor',
+    surname: 'Obrovsky',
+    balance: 1500.00,
+    image: 'avatar'
+};
+
+/* DESKTOP MENU */
+/* Links displayed in the main part of the Desktop menu:
+    *   name - name to be displayed
+    *   route - route activated by clicking
+    * */
+export const desktopMainLinks = [
+    {
+        name: 'Profile',
+        route: '/profile/' + (userData.firstName + userData.surname).toLowerCase() + '/'
+    },
+    {
+        name: 'My Bookings',
+        route: '/bookings/'
+    },
+    {
+        name: 'My Payments',
+        route: '/payments/'
+    },
+    {
+        name: 'Log Out',
+        route: '/logout/'
+    },
+    {
+        name: 'Resume Application',
+        route: '/resume/'
+    }
+];
+
+
+/* Mobile menu link data:
   *   name - name to be displayed
   *   route - route activated by clicking
   *   icon - fontawesome icon to be used
@@ -16,7 +53,7 @@ import {
 export const mobileMenuLinks = [
     {
         name: 'Profile',
-        route: '/profile/' + (props.firstName + props.surname).toLowerCase() + '/',
+        route: '/profile/' + (userData.firstName + userData.surname).toLowerCase() + '/',
         icon: faUserCircle,
         rotation: 0
     },

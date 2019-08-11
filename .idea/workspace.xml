@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="826c6971-4d2b-4be3-811c-ce876c026833" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/data/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/awaymoFullWhite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopHeader/DesktopHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopHeader/DesktopHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHeader/MobileHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHeader/MobileHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/Home/Home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="168" column="33" lean-forward="true" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+            <state relative-caret-position="23">
+              <caret line="187" column="4" selection-start-line="187" selection-start-column="4" selection-end-line="193" selection-end-column="6" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -82,10 +78,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="88" selection-start-line="87" selection-start-column="15" selection-end-line="88" />
+            <state relative-caret-position="207">
+              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -94,10 +90,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
+        <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
+            <state relative-caret-position="207">
+              <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -108,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="552">
+              <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
               <folding>
                 <element signature="e#0#179#0" expanded="true" />
               </folding>
@@ -129,25 +137,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopHelpPanel/DesktopHelpPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>linkcontainer</find>
-      <find>SideMenu</find>
-      <find>TopLInk</find>
       <find>topSide</find>
       <find>hideMEnu</find>
       <find>userData</find>
@@ -174,6 +167,9 @@
       <find>userImagePath</find>
       <find>awaymo</find>
       <find>.map</find>
+      <find>fontawesome</find>
+      <find>FontAwe</find>
+      <find>props</find>
       <find>selection</find>
     </findStrings>
     <replaceStrings>
@@ -197,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileMenu.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/DesktopSideMenu.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopUserData/DesktopUserData.js" />
-        <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideBottomLinks/SideBottomLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js" />
         <option value="$PROJECT_DIR$/public/_redirects" />
@@ -212,8 +207,9 @@
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopHeader/DesktopHeader.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHeader/MobileHeader.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/assets/data/constants.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js" />
+        <option value="$PROJECT_DIR$/src/assets/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js" />
       </list>
     </option>
   </component>
@@ -503,12 +499,12 @@
       <workItem from="1564923364289" duration="1810000" />
       <workItem from="1565013931816" duration="2184000" />
       <workItem from="1565368049460" duration="625000" />
-      <workItem from="1565441917343" duration="2799000" />
+      <workItem from="1565441917343" duration="3255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136087000" />
+    <option name="totallyTimeSpent" value="136543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="78" width="1639" height="887" extended-state="0" />
@@ -623,16 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-822">
-          <caret line="53" column="3" lean-forward="true" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopUserData/DesktopUserData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-983">
@@ -667,16 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="18180" selection-start-column="18180" selection-end-column="18180" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,30 +777,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="168" column="33" lean-forward="true" selection-start-line="168" selection-start-column="33" selection-end-line="168" selection-end-column="33" />
+        <state relative-caret-position="23">
+          <caret line="187" column="4" selection-start-line="187" selection-start-column="4" selection-end-line="193" selection-end-column="6" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="552">
+          <caret line="54" column="24" lean-forward="true" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
           <folding>
             <element signature="e#0#179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileLinks/MobileLinks.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
+        <state relative-caret-position="207">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

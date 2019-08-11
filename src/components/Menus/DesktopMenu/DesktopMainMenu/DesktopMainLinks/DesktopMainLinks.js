@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, {keyframes} from 'styled-components';
+import {desktopMainLinks} from "../../../../../assets/data/constants";
 
 /* STYLES */
 
@@ -61,36 +62,9 @@ const MenuLink = styled(Link)`
 
 function DesktopMainLinks(props) {
 
-    /* Links displayed in the main menu:
-    *   name - name to be displayed
-    *   route - route activated by clicking
-    * */
-    const mainLinks = [
-        {
-            name: 'Profile',
-            route: '/profile/' + (props.firstName + props.surname).toLowerCase() + '/'
-        },
-        {
-            name: 'My Bookings',
-            route: '/bookings/'
-        },
-        {
-            name: 'My Payments',
-            route: '/payments/'
-        },
-        {
-            name: 'Log Out',
-            route: '/logout/'
-        },
-        {
-            name: 'Resume Application',
-            route: '/resume/'
-        }
-    ];
-
     return (
         <MainLinks>
-            {mainLinks.map((link) => (
+            {desktopMainLinks.map((link) => (
                 <LinkContainer
                     key={link.name}
                     onClick={props.hideMenu}

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {userData} from "../../../../../assets/data/constants";
 
 /* STYLES */
 const UserData = styled.div`
@@ -46,13 +47,13 @@ const UserDetails = styled.div`
 function DesktopUserData(props) {
 
     // Path to the user image
-    const userImagePath = '/' + props.image + '.png';
+    const userImagePath = '/' + userData.image + '.png';
 
     // User full name
-    const fullName = props.firstName + ' ' + props.surname;
+    const fullName = userData.firstName + ' ' + userData.surname;
 
     // Balance information
-    const balanceInfo = props.balance + ' Available';
+    const balanceInfo = userData.balance + ' Available';
 
     return(
         <UserData>

@@ -7,11 +7,16 @@ import {
     faUserCircle
 } from "@fortawesome/free-solid-svg-icons";
 
+// Changes number format by adding comma as thousands separator
+const formatNumber = num => {
+    return num.toFixed(2).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+};
+
 // Example user data to be displayed in the menu
-const userData = {
+export const userData = {
     firstName: 'Viktor',
     surname: 'Obrovsky',
-    balance: 1500.00,
+    balance: formatNumber(2500.00),
     image: 'avatar'
 };
 

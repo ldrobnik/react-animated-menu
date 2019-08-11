@@ -57,10 +57,6 @@ function DesktopMenu(props) {
             <MenuContent>
                 <DesktopSideMenu hideMenu={props.hideMenu}/>
                 <DesktopMainMenu
-                    firstName={props.firstName}
-                    surname={props.surname}
-                    balance={props.balance}
-                    image={props.image}
                     hideMenu={props.hideMenu}
                 />
                 <Margin/>

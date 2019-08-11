@@ -44,7 +44,7 @@ const UserDetails = styled.div`
   }
 `;
 
-function DesktopUserData(props) {
+function DesktopUserData() {
 
     // Path to the user image
     const userImagePath = '/' + userData.image + '.png';

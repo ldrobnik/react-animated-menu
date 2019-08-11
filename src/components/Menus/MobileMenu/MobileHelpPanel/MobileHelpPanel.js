@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {helpPanelData} from "../../../../assets/data/constants";
 
 /* STYLES */
 const HelpPanel = styled.div`
@@ -30,11 +31,14 @@ const EmailLink = styled.a`
 `;
 
 function MobileHelpPanel() {
+
+    //Link to be used in the email link
+    const emailLink = 'mailto:' + helpPanelData.email;
     return (
         <HelpPanel>
-            <p>We’re here to help</p>
-            <p>+44 (0) 55 5040 5934</p>
-            <p><EmailLink href='support@notanactualdomain.com'>support@notanactualdomain.com</EmailLink></p>
+            <p>{helpPanelData.message}</p>
+            <p>{helpPanelData.phone}</p>
+            <p><EmailLink href={emailLink}>{helpPanelData.email}</EmailLink></p>
         </HelpPanel>
     );
 }

@@ -155,8 +155,6 @@ You can also take a look at a [live demo](react-animated-menu.netlify.com).
 
 - Displays contact details to be used should the user need help.
 
-- In the design provided, only the part “We’re here to help” was visible. I didn’t want to bother you with a non-technical question, so I assumed the missing details should also be presented. In a real-life scenario, I would contact the design creator to make sure that really is the case. 
-
 ### DesktopMenu.js
 
 - Contains all the components of the Mobile Menu and passes necessary props into them.
@@ -200,6 +198,10 @@ You can also take a look at a [live demo](react-animated-menu.netlify.com).
 ### Backdrop.js
 
 - Displayed as a background of the Desktop Menu. When clicked, it closes the menu.
+
+### constant.js
+
+- A file containing constants with data used throughout the project.
 
 
 

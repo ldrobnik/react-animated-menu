@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, {keyframes} from 'styled-components';
+import {desktopBottomSideLinks} from "../../../../../assets/data/constants";
 
 /* STYLES */
 
@@ -58,32 +59,9 @@ const MenuLink = styled(Link)`
 
 function SideBottomLinks(props) {
 
-    /* Links in the bottom part of the side menu
-    *   name - name to be displayed
-    *   route - route activated by clicking
-    * */
-    const bottomSideLinks = [
-        {
-            name: 'About Us',
-            route: '/about/'
-        },
-        {
-            name: 'FAQ',
-            route: '/faq/'
-        },
-        {
-            name: 'Support',
-            route: '/support/'
-        },
-        {
-            name: 'Contact Us',
-            route: '/contact/'
-        }
-    ];
-
     return (
         <BottomLinks>
-            {bottomSideLinks.map((link) => (
+            {desktopBottomSideLinks.map((link) => (
                 <LinkContainer
                     key={link.name}
                     onClick={props.hideMenu}

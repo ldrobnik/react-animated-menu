@@ -16,15 +16,9 @@ function DesktopMainMenu(props) {
     return (
         <MainMenu>
             <DesktopUserData
-                firstName={props.firstName}
-                surname={props.surname}
-                balance={props.balance}
-                image={props.image}
                 hideMenu={props.hideMenu}
             />
             <DesktopMainLinks
-                firstName={props.firstName}
-                surname={props.surname}
                 hideMenu={props.hideMenu}
             />
         </MainMenu>

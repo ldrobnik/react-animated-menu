@@ -197,17 +197,9 @@ function Home() {
     const menu = isMobile ?
         <MobileMenu
             hideMenu={handleMenuHide}
-            surname={userData.surname}
-            firstName={userData.firstName}
-            balance={formatNumber(userData.balance)}
-            image={userData.image}
         /> :
         <DesktopMenu
             hideMenu={handleMenuHide}
-            firstName={userData.firstName}
-            surname={userData.surname}
-            balance={formatNumber(userData.balance)}
-            image={userData.image}
         />;
 
     //Specifies whether backdrop should be shown

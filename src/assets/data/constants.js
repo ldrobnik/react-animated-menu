@@ -48,7 +48,7 @@ export const desktopMainLinks = [
     }
 ];
 
-/* Links in the top part of the side part of the Desktop Menu
+/* Links in the top side part of the Desktop Menu
     *   name - name to be displayed
     *   route - route activated by clicking
     * */
@@ -63,6 +63,30 @@ export const desktopTopSideLinks = [
     },
 ];
 
+/* Links in the bottom side part of the Desktop Menu
+    *   name - name to be displayed
+    *   route - route activated by clicking
+    * */
+export const desktopBottomSideLinks = [
+    {
+        name: 'About Us',
+        route: '/about/'
+    },
+    {
+        name: 'FAQ',
+        route: '/faq/'
+    },
+    {
+        name: 'Support',
+        route: '/support/'
+    },
+    {
+        name: 'Contact Us',
+        route: '/contact/'
+    }
+];
+
+/* MOBILE MENU */
 
 /* Mobile menu link data:
   *   name - name to be displayed
@@ -120,3 +144,11 @@ export const mobileMenuLinks = [
         rotation: 0
     }
 ];
+
+//Data to be used in the help panel
+
+export const helpPanelData = {
+    message: 'We’re here to help',
+    phone: '+55 (0) 55 5050 5555',
+    email: 'support@notanactualdomain.com'
+}

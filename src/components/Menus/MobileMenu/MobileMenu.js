@@ -33,14 +33,9 @@ function MobileMenu(props) {
             />
             <MobileUserData
                 hideMenu={props.hideMenu}
-                firstName={props.firstName}
-                balance={props.balance}
-                image={props.image}
             />
             <MobileLinks
                 hideMenu={props.hideMenu}
-                firstName={props.firstName}
-                surname={props.surname}
             />
             <MobileHelpPanel />
         </MenuContainer>

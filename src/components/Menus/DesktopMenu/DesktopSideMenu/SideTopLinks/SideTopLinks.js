@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled, {keyframes} from 'styled-components';
+import {desktopTopSideLinks} from "../../../../../assets/data/constants";
 
 /* STYLES */
 
@@ -59,24 +60,9 @@ const MenuLink = styled(Link)`
 
 function SideTopLinks(props) {
 
-    /* Links in the top part of the side menu
-    *   name - name to be displayed
-    *   route - route activated by clicking
-    * */
-    const topSideLinks = [
-        {
-            name: 'Home',
-            route: '/'
-        },
-        {
-            name: 'Flights',
-            route: '/flights/'
-        },
-    ];
-
     return (
         <TopLinks>
-            {topSideLinks.map((link) => (
+            {desktopTopSideLinks.map((link) => (
                 <LinkContainer
                     key={link.name}
                     onClick={props.hideMenu}

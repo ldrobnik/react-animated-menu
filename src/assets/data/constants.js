@@ -48,6 +48,21 @@ export const desktopMainLinks = [
     }
 ];
 
+/* Links in the top part of the side part of the Desktop Menu
+    *   name - name to be displayed
+    *   route - route activated by clicking
+    * */
+export const desktopTopSideLinks = [
+    {
+        name: 'Home',
+        route: '/'
+    },
+    {
+        name: 'Flights',
+        route: '/flights/'
+    },
+];
+
 
 /* Mobile menu link data:
   *   name - name to be displayed

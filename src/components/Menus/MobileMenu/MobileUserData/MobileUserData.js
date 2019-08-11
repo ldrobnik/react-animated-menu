@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {userData} from "../../../../assets/data/constants";
 
 /* STYLES */
 
@@ -53,14 +54,14 @@ const UserBalanceValue = styled.p`
 function MobileUserData(props) {
 
     // Path to the user image
-    const userImagePath = '/' + props.image + '.png';
+    const userImagePath = '/' + userData.image + '.png';
 
     return (
         <UserData>
             <UserAvatar src={userImagePath} alt='User profile photo'/>
-            <UserName>{props.firstName}</UserName>
+            <UserName>{userData.firstName}</UserName>
             <UserBalanceInfo>Available Balance</UserBalanceInfo>
-            <UserBalanceValue>&pound;{props.balance}</UserBalanceValue>
+            <UserBalanceValue>&pound;{userData.balance}</UserBalanceValue>
         </UserData>
     );
 }

@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="826c6971-4d2b-4be3-811c-ce876c026833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/assets/data/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopUserData/DesktopUserData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopUserData/DesktopUserData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -100,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/data/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="230">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
                 <element signature="e#0#179#0" expanded="true" />
               </folding>
@@ -124,11 +123,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-736">
-              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+            <state relative-caret-position="299">
+              <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -195,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopSideMenu/SideTopLinks/SideTopLinks.js" />
         <option value="$PROJECT_DIR$/public/_redirects" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainMenu.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMenu.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileHelpPanel/MobileHelpPanel.js" />
@@ -209,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopMainLinks/DesktopMainLinks.js" />
         <option value="$PROJECT_DIR$/src/components/Menus/DesktopMenu/DesktopMainMenu/DesktopUserData/DesktopUserData.js" />
         <option value="$PROJECT_DIR$/src/assets/data/constants.js" />
+        <option value="$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js" />
       </list>
     </option>
   </component>
@@ -498,18 +497,18 @@
       <workItem from="1564923364289" duration="1810000" />
       <workItem from="1565013931816" duration="2184000" />
       <workItem from="1565368049460" duration="625000" />
-      <workItem from="1565441917343" duration="4145000" />
+      <workItem from="1565441917343" duration="4225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137433000" />
+    <option name="totallyTimeSpent" value="137513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="78" width="1639" height="887" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4958159" visible="true" weight="0.20487195" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958159" visible="true" weight="0.20487195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5041841" side_tool="true" weight="0.31208372" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -523,7 +522,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5009259" side_tool="true" weight="0.32676056" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49907407" visible="true" weight="0.31730768" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49907407" visible="true" weight="0.31730768" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -796,16 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-736">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Home/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -818,10 +807,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/data/constants.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="230">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
             <element signature="e#0#179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Menus/MobileMenu/MobileUserData/MobileUserData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="64" column="19" lean-forward="true" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
